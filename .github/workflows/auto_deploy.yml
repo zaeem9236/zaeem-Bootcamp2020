@@ -32,4 +32,4 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
       - name: deploying using surge
-        run: surge ./ zaeem-testing.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
+        run: surge ./Assignment-1/ zaeem-testing.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
