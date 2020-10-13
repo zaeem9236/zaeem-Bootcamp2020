@@ -29,12 +29,12 @@ jobs:
       uses: borales/actions-yarn@v2.1.0
       with:
         # Yarn command
-        cmd: install # npm install/ yarn install
+        cmd: install && yarn run test # npm install/ yarn install
 
         #change project directory
 
-    -name: yarn test
-     cmd:  yarn run test
+    # -name: yarn test
+    #  cmd:  yarn run test
     
     - name: Creating build
       run: cd test_project && yarn build
