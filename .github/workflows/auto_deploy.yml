@@ -33,8 +33,8 @@ jobs:
 
         #change project directory
 
-    -name: Install
-     run:  npm -g install yarn
+    # -name: Install
+    #  run:  npm -g install yarn
     
     - name: Creating build
       run: cd test_project && yarn build
