@@ -28,12 +28,11 @@ jobs:
         with:
           node-version: 12 
 
-      - name: Install Packages
-      run: npm install
-    
-      - name: Build page
-      run: npm run build
-   
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run the tests
+      run: npm test
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
