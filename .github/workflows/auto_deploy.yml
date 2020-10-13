@@ -34,7 +34,7 @@ jobs:
         #change project directory
 
     -name: Install
-     cmd:  npm install -g yarn
+     run:  npm install -g yarn
     
     - name: Creating build
       run: cd test_project && yarn build
