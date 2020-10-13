@@ -33,11 +33,11 @@ jobs:
 
         #change project directory
 
-    -name: Changing Project Directory
+    # -name: Changing Project Directory
      run:  ./testing
     
     - name: Creating build
-      run: yarn build
+      run: cd testing && yarn build
     
     - name: installing surge  
       run: npm install --global surge
