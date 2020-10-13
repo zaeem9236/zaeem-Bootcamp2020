@@ -44,4 +44,4 @@ jobs:
     
     - name: deploying on surge
       # run: surge build test_dummy.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}}
-      run: set var=%cd% && ECHO %var%
+      run: cd
