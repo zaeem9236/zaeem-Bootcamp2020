@@ -7,6 +7,7 @@ name: test_project
 on:
   push:
     branches: [ main ]
+    paths: /testing/
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -38,4 +39,4 @@ jobs:
       run: npm install --global surge
     
     - name: deploying on surge
-      run: surge ./ab test_dummy.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}}
+      run: surge ./testing test_dummy.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}}
