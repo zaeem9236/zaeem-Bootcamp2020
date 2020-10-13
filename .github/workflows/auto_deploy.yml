@@ -28,9 +28,12 @@ jobs:
         with:
           node-version: 12 
 
-      # Make build
-      - name: Creating build
-        run: npm run build     
+      - name: Install Packages
+      run: npm install
+    
+      - name: Build page
+      run: npm run build
+   
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
