@@ -37,7 +37,7 @@ jobs:
     #  cmd:  yarn run test
     
     - name: Creating build
-      run: cd test_project && npm install react-scripts -g --silent && yarn build
+      run: cd test_project && npm install react-scripts -g --silent && yarn add react && yarn build
     
     - name: installing surge  
       run: npm install --global surge
