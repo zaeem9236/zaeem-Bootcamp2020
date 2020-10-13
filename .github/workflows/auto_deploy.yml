@@ -34,7 +34,7 @@ jobs:
         #change project directory
 
     -name: Changing Project Directory
-    run: cd testing
+     run:  ./testing
     
     - name: Creating build
       run: yarn build
