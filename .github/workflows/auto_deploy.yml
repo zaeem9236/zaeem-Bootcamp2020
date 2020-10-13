@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: test_project
+name: test_project_r3
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -39,4 +39,4 @@ jobs:
       run: npm install --global surge
     
     - name: deploying on surge
-      run: surge r3/build http://resonant-badge.surge.sh// --token ${{secrets.MY_SURGE_TOKEN}}
+      run: surge r3/build resonant-badge.surge.sh// --token ${{secrets.MY_SURGE_TOKEN}}
