@@ -32,10 +32,10 @@ jobs:
         cmd: install # npm install/ yarn install
     
     - name: Creating build
-      run: yarn build
+      run: yarn build/testing
     
     - name: installing surge  
       run: npm install --global surge
     
     - name: deploying on surge
-      run: surge ./home/runner/work/zaeem-Bootcamp2020/zaeem-Bootcamp2020/testing test_dummy.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}}
+      run: surge ./testing/ test_dummy.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}}
