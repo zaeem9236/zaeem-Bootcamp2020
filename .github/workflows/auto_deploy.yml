@@ -30,7 +30,7 @@ jobs:
       with:
         # Yarn command
         cmd: install # npm install/ yarn install
-        cmd: cd Assignment-1
+        # cmd: cd Assignment-1
     
     - name: Creating build
       run: yarn build
