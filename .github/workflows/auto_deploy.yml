@@ -18,7 +18,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: testing/actions/checkout@v2
+    - uses: actions/checkout@v2
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v2-beta
@@ -38,4 +38,4 @@ jobs:
       run: npm install --global surge
     
     - name: deploying on surge
-      run: surge ./testing test_dummy.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}}
+      run: surge ./Assignment-1 test_dummy.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}}
