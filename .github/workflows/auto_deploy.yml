@@ -28,11 +28,14 @@ jobs:
         with:
           node-version: 12 
 
-      - name: Install dependencies
-        run: npm install
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v2.1.0
+        with:
+          # Yarn command
+          cmd: nmp install
 
-      - name: Run the tests
-        run: npm test
+      - name: Creating build
+        run: npm run build
 
       # Runs a set of commands using the runners shell
       - name: Installing surge
