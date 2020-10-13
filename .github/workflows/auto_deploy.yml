@@ -31,17 +31,12 @@ jobs:
         # Yarn command
         cmd: install # npm install/ yarn install
 
-        #change project directory
-
-    # -name: yarn test
-    #  cmd:  yarn run test
     
     - name: Creating build
-      run: cd test_project && npm install react-scripts -g --silent && yarn add react && yarn build
+      run: cd r3 && npm install react-scripts -g --silent && yarn add react && yarn build
     
     - name: installing surge  
       run: npm install --global surge
     
     - name: deploying on surge
-      run: surge test_project/build test_dummy.surge.sh/ --token ${{secrets.MY_SURGE_TOKEN}}
-      # run: dir
+      run: surge r3/build http://resonant-badge.surge.sh// --token ${{secrets.MY_SURGE_TOKEN}}
