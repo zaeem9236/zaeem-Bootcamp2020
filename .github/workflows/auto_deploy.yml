@@ -26,7 +26,7 @@ jobs:
         version: 12.16.2
         
     - name: GitHub Action for Yarn
-      uses: borales/actions-yarn@v1.22.10
+      uses: borales/actions-yarn@v2.1.0
       with:
         # Yarn command
         cmd: install # npm install/ yarn install
@@ -37,7 +37,7 @@ jobs:
     #  run:  ./testing
     
     - name: Creating build
-      run: cd testing && yarn build
+      run: yarn build && cd testing
     
     - name: installing surge  
       run: npm install --global surge
