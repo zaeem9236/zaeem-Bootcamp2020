@@ -37,7 +37,7 @@ jobs:
     #  run:  ./testing
     
     - name: Creating build
-      run: cd test_project && npm run build
+      run: cd test_project/build && yarn build
     
     - name: installing surge  
       run: npm install --global surge
