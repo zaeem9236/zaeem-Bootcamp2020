@@ -5,7 +5,7 @@
 }
 
 .main_body{
-  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to bottom, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   height: 100vh;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .heading{
-  background-color: red;
+  color: rgb(240, 122, 12);
 }
 
 .AI{
@@ -24,8 +24,9 @@
   justify-content: center;
   align-items: center;
   background-color: rgba(18, 11, 112, 0.8);
-  color: rgb(242, 215, 250);
+  color: rgb(239, 215, 250);
   height: 70px;
+  word-spacing: 8px;
 }
 
 .IOT{
@@ -37,6 +38,7 @@
   background-color: rgb(78, 160, 120, 0.8);
   color: antiquewhite;
   height: 70px;
+  word-spacing: 8px;
 }
 
 .BC{
@@ -44,9 +46,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(211, 214, 10, 0.8);
+  background-color: rgba(142, 144, 4, 0.8);
   color: antiquewhite;
   height: 70px;
+  word-spacing: 8px;
 }
 
 .CNC{
@@ -57,5 +60,6 @@
   background-color: rgba(143, 16, 69, 0.8);
   color: antiquewhite;
   height: 70px;
+  word-spacing: 8px;
 }
 
