@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-.heading_Div{
-  
+.heading_div{
+  display: flex;
+  justify-content: center;
 }
 
 .heading{
@@ -13,18 +14,35 @@
 }
 
 .AI{
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
   background-color: red;
+  height: 50px;
 }
 
 .IOT{
+  margin-top: 4%;
+
+  display: flex;
+  justify-content: center;
   background-color: rebeccapurple;
+  height: 50px;
 }
 
 .BC{
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
   background-color: rebeccapurple;
+  height: 50px;
 }
 
 .CNC{
+  margin-top: 4%;
+  display: flex;
+  justify-content: center;
   background-color: rebeccapurple;
+  height: 50px;
 }
 
