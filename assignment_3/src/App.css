@@ -17,8 +17,9 @@
   margin-top: 4%;
   display: flex;
   justify-content: center;
-  background-color: red;
-  height: 50px;
+  align-items: center;
+  background-color: rgb(18, 11, 112);
+  height: 70px;
 }
 
 .IOT{
@@ -26,23 +27,26 @@
 
   display: flex;
   justify-content: center;
-  background-color: rebeccapurple;
-  height: 50px;
+  align-items: center;
+  background-color: rgb(6, 138, 74);
+  height: 70px;
 }
 
 .BC{
   margin-top: 4%;
   display: flex;
   justify-content: center;
-  background-color: rebeccapurple;
-  height: 50px;
+  align-items: center;
+  background-color: rgb(211, 214, 10);
+  height: 70px;
 }
 
 .CNC{
   margin-top: 4%;
   display: flex;
   justify-content: center;
-  background-color: rebeccapurple;
-  height: 50px;
+  align-items: center;
+  background-color: rgb(143, 16, 69);
+  height: 70px;
 }
 

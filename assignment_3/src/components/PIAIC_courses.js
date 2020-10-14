@@ -5,7 +5,6 @@ function PiaicCourses(props) {
         <React.Fragment>
             <div>
                 <h3>Program: {props.name} Instructor: {props.instructor} Duration: {props.duration} year</h3>
-                <hr />
             </div>
         </React.Fragment>
     );

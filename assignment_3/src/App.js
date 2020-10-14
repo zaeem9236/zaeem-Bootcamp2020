@@ -7,7 +7,7 @@ function App() {
   return (
     <React.Fragment>
       <div className='heading_div'>
-        <h1 className='heading'>PIAIC Couses</h1>
+        <h1 className='heading'>PIAIC Courses</h1>
         <hr />
       </div>
 
