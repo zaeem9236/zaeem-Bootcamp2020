@@ -5,7 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <h2>Hello, my name is Zaeem Ahmad and assignment-2 is hosted onsurge via github actions</h2>
+      <h2>Hello, my name is Zaeem Ahmad and assignment-2 is hosted on surge via github actions</h2>
     </div>
   );
 }
