@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+.main_body{
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 100vh;
+}
+
 .heading_div{
   display: flex;
   justify-content: center;
@@ -18,7 +23,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(18, 11, 112);
+  background-color: rgba(18, 11, 112, 0.8);
+  color: rgb(242, 215, 250);
   height: 70px;
 }
 
@@ -28,7 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(6, 138, 74);
+  background-color: rgb(78, 160, 120, 0.8);
+  color: antiquewhite;
   height: 70px;
 }
 
@@ -37,7 +44,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(211, 214, 10);
+  background-color: rgba(211, 214, 10, 0.8);
+  color: antiquewhite;
   height: 70px;
 }
 
@@ -46,7 +54,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(143, 16, 69);
+  background-color: rgba(143, 16, 69, 0.8);
+  color: antiquewhite;
   height: 70px;
 }
 
