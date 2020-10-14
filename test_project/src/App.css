@@ -4,8 +4,14 @@
   box-sizing: border-box;
 }
 
-.App {
+.App_0 {
   text-align: center;
+  background-color: aqua;
+}
+
+.App_1{
+  text-align: center;
+  background-color: blueviolet;
 }
 
 
