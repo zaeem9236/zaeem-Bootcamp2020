@@ -26,7 +26,7 @@
   align-items: center;
   background-color: rgba(18, 11, 112, 0.8);
   color: rgb(239, 215, 250);
-  height: 70px;
+  height: 80px;
   word-spacing: 7px;
   font-size: 18px;
 }
@@ -38,7 +38,7 @@
   align-items: center;
   background-color: rgb(78, 160, 120, 0.8);
   color: antiquewhite;
-  height: 70px;
+  height: 80px;
   word-spacing: 7px;
   font-size: 18px;
 }
@@ -50,7 +50,7 @@
   align-items: center;
   background-color: rgba(142, 144, 4, 0.8);
   color: antiquewhite;
-  height: 70px;
+  height: 80px;
   word-spacing: 7px;
   font-size: 18px;
 }
@@ -62,7 +62,7 @@
   align-items: center;
   background-color: rgba(143, 16, 69, 0.8);
   color: antiquewhite;
-  height: 70px;
+  height: 80px;
   word-spacing: 7px;
   font-size: 18px;
 }
