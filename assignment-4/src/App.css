@@ -4,3 +4,47 @@
   box-sizing: border-box;
 }
 
+.main_div{
+  background-color: aqua;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter_section{
+  background-color: beige;
+  width: 70%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decrement_button{
+  height: 50px;
+  width: 70px;
+  background-color: rgb(68, 55, 55);
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-right: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.increment_button{
+  height: 50px;
+  width: 70px;
+  background-color: rgb(68, 55, 55);
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-left: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+

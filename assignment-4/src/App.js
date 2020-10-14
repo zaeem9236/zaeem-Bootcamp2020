@@ -12,7 +12,7 @@ function App() {
       <div className='counter_section'>
         <button className='decrement_button'> - </button>
         <div className='counter'>
-          <h1 className='counter_text'>put counter here</h1>
+          <h1 className='counter_text'>1</h1>
         </div>
         <button className='increment_button'> + </button>
       </div>
