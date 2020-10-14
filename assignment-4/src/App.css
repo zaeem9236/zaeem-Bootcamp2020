@@ -5,17 +5,18 @@
 }
 
 .main_div{
-  background-color: aqua;
+  /* background-color: aqua; */
   height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .counter_section{
-  background-color: beige;
-  width: 70%;
-  height: 60%;
+  /* background-color: beige; */
+  width: 40%;
+  height: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,28 +24,57 @@
 
 .decrement_button{
   height: 50px;
-  width: 70px;
-  background-color: rgb(68, 55, 55);
+  width: 100px;
+  background-color: rgb(18, 23, 98);
   color: white;
   font-size: 30px;
   font-weight: bolder;
   margin-right: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   outline: none;
+}
+.decrement_button:hover{
+  background-color: rgb(15, 131, 77);
+  transition-duration: .1s;
 }
 
 .increment_button{
   height: 50px;
-  width: 70px;
-  background-color: rgb(68, 55, 55);
+  width: 100px;
+  background-color: rgb(18, 23, 98);
   color: white;
   font-size: 30px;
   font-weight: bolder;
   margin-left: 30px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: none;
   outline: none;
 }
+.increment_button:hover{
+  background-color: rgb(15, 131, 77);
+  transition-duration: .1s;
+}
 
+.color_change{
+  /* background-color: violet; */
+  margin-bottom: 50px;
+
+  
+}
+
+.color_change_button{
+  background-color: rgb(240, 178, 62);
+  padding: 15px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: bolder;
+  outline: none; 
+   border: none;
+}
+.color_change_button:hover{
+  background-color: rgb(216, 37, 31);
+  transition-duration: .3s;
+}
 

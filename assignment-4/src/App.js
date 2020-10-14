@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="main_div">
       <div className='color_change'>
-        <button></button>
+        <button className='color_change_button'>Change color to ...</button>
       </div>
 
       <div className='counter_section'>
