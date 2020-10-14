@@ -26,19 +26,20 @@
   background-color: rgba(18, 11, 112, 0.8);
   color: rgb(239, 215, 250);
   height: 70px;
-  word-spacing: 8px;
+  word-spacing: 7px;
+  font-size: 18px;
 }
 
 .IOT{
   margin-top: 4%;
-
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: rgb(78, 160, 120, 0.8);
   color: antiquewhite;
   height: 70px;
-  word-spacing: 8px;
+  word-spacing: 7px;
+  font-size: 18px;
 }
 
 .BC{
@@ -49,7 +50,8 @@
   background-color: rgba(142, 144, 4, 0.8);
   color: antiquewhite;
   height: 70px;
-  word-spacing: 8px;
+  word-spacing: 7px;
+  font-size: 18px;
 }
 
 .CNC{
@@ -60,6 +62,7 @@
   background-color: rgba(143, 16, 69, 0.8);
   color: antiquewhite;
   height: 70px;
-  word-spacing: 8px;
+  word-spacing: 7px;
+  font-size: 18px;
 }
 
