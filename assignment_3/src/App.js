@@ -10,7 +10,6 @@ function App() {
 
         <div className='heading_div'>
           <h1 className='heading'>PIAIC Programs</h1>
-          <hr />
         </div>
 
         <div className='AI' >
