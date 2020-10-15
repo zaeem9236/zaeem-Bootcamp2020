@@ -4,7 +4,7 @@ import './App.css';
 
 function App() {
   let [count, updateCount] = useState(0); 
-  let [nightMode, updateMode] = useState(true);
+  let [nightMode, updateMode] = useState(false);
   return (
     <div className={`main_div ${nightMode ? 'main_div_night' : ''}`}>
       <div className='color_change'>
