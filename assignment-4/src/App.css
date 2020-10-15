@@ -11,6 +11,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition-duration: 3s;
+}
+
+.main_div_night{
+  background-color: rgb(40, 46, 46);
+  transition-duration: 3s;
+
 }
 
 .counter_section{
@@ -33,14 +40,32 @@
   border-radius: 5px;
   border: none;
   outline: none;
+  transition-duration: 0.1s;
 }
 .decrement_button:hover{
   background-color: rgb(15, 131, 77);
   transition-duration: .1s;
 }
+.decrement_button_night{
+  background-color: rgb(40, 46, 46);
+  border:2px solid rgb(14, 119, 119);
+  color: rgb(14,119,119);
+  transition-duration: 0.1s;
+}
+.decrement_button_night:hover{
+  background-color: rgba(8, 77, 98, 0.883);
+  color: wheat;
+  transition-duration: 0.1s;
+}
 
 .counter_text{
   color: rgb(56, 49, 49);
+  transition-duration: 2s;
+}
+
+.counter_text_night{
+  color: rgb(18, 218, 253);
+  transition-duration: 2s;
 }
 
 .increment_button{
@@ -54,9 +79,22 @@
   border-radius: 5px;
   border: none;
   outline: none;
+  transition-duration: .1s;
 }
 .increment_button:hover{
   background-color: rgb(15, 131, 77);
+  transition-duration: .1s;
+}
+
+.increment_button_night{
+  background-color: rgb(40, 46, 46);
+  border:2px solid rgb(14, 119, 119);
+  color: rgb(14,119,119);
+  transition-duration: .1s;
+}
+.increment_button_night:hover{
+  background-color: rgba(8, 77, 98, 0.883);
+  color: wheat;
   transition-duration: .1s;
 }
 
@@ -76,9 +114,20 @@
   font-weight: bolder;
   outline: none; 
    border: none;
+   transition-duration: .3s;
 }
 .color_change_button:hover{
   background-color: rgb(216, 37, 31);
   transition-duration: .3s;
 }
 
+.color_change_button_night{
+  background-color: transparent;
+  color: rgb(236, 234, 234);
+  border: 2px solid rgb(236, 234, 234);
+  transition-duration: .3s;
+}
+.color_change_button_night:hover{
+  background-color: rgba(29, 153, 190, 0.883);
+  transition-duration: .3s;
+}
