@@ -1,7 +1,7 @@
 # This is a basic workflow to help you get started with Actions
 
-project_name: test_project
-link: zaeem_test_project.surge.sh
+project_name: "test_project"
+link: "zaeem_test_project.surge.sh"
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
