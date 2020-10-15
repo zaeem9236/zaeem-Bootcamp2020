@@ -2,25 +2,40 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  color: rgb(255, 0, 0);
 }
 
-.expand{
-  background-color: blueviolet;
+.main_div{
+  background-color: rgb(42, 42, 46);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.list{
-  background-color: rgb(155, 0, 121);
-  position: absolute;
-  /* z-index: 1; */
-}
-.list_none{
-  display:none;
-}
-.parent_headings{
-  position: absolute;
+.box{
+  background-color: aliceblue;
+  width: 50%;
+  height: 50%;
 }
 
-.headings{
+.sub_box1{
+  background-color: aqua;
+  width: 70px;
+  height: 70px;
   position: relative;
+  z-index: 1;
+}
+
+.sub_box2{
+  background-color: rgb(219, 118, 71);
+  width: 70px;
+  height: 70px;
+  position: relative;
+  top: -70px;
+
+
+  
+  /* display: none; */
 }
 
