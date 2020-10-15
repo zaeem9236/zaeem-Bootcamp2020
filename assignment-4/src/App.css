@@ -39,6 +39,10 @@
   transition-duration: .1s;
 }
 
+.counter_text{
+  color: rgb(56, 49, 49);
+}
+
 .increment_button{
   height: 50px;
   width: 100px;
