@@ -9,7 +9,7 @@
 }
 
 .list{
-  background-color: chartreuse;
+  background-color: rgb(155, 0, 121);
   position: absolute;
   /* z-index: 1; */
 }
