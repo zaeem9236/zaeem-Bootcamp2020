@@ -4,14 +4,23 @@
   box-sizing: border-box;
 }
 
-.App_0 {
-  text-align: center;
-  background-color: aqua;
-}
-
-.App_1{
-  text-align: center;
+.expand{
   background-color: blueviolet;
 }
 
+.list{
+  background-color: chartreuse;
+  position: absolute;
+  /* z-index: 1; */
+}
+.list_none{
+  display:none;
+}
+.parent_headings{
+  position: absolute;
+}
+
+.headings{
+  position: relative;
+}
 
