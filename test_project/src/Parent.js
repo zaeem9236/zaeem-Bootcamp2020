@@ -1,7 +1,7 @@
 import React from 'react';
 import Child from './Child.js';
 
-function Parent() {
+function Parent(){
   return(
     <React.Fragment>
         <Child />
