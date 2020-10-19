@@ -1,11 +1,13 @@
 import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+import Parent from './Parent.js';
+import globalStates from './globalStates.js';
 
 function App() {
   return(
     <React.Fragment>
-      <h1>zaeem here</h1>
+      <globalStates.Provider value={123}>
+      <Parent />
+      </globalStates.Provider>
     </React.Fragment>
   );
 }
