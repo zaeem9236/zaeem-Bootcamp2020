@@ -5,7 +5,7 @@ import globalStates from './globalStates.js';
 function App() {
   return(
     <React.Fragment>
-      <globalStates.Provider value={123}>
+      <globalStates.Provider value={23}>
       <Parent />
       </globalStates.Provider>
     </React.Fragment>
