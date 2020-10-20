@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Parent from './Parent';
+import Parent from './components/Parent/Parent.js';
 import CentralisedData from './CentralisedData';
 import './App.css';
 

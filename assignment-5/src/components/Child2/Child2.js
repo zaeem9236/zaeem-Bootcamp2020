@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import CentralisedStates from './CentralisedStates';
+import CentralisedStates from '../../CentralisedStates';
 
 function Child2(){
     let [counter, dispatch] = useReducer(CentralisedStates, 0);

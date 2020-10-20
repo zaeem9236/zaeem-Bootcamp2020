@@ -1,5 +1,5 @@
 import React,{ useContext} from 'react';
-import CentralisedData from './CentralisedData.js';
+import CentralisedData from '../../CentralisedData';
 
 function Child1(){
     let [count, updateCount] = useContext(CentralisedData);

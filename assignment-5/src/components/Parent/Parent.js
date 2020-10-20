@@ -1,7 +1,6 @@
 import React from 'react';
-import Child1 from './Child1';
-import Child2 from './Child2';
-import './App.css';
+import Child1 from '../Child1/Child1.js';
+import Child2 from '../Child2/Child2.js';
 
 
 function Parent(){
