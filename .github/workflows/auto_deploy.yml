@@ -33,10 +33,10 @@ jobs:
 
     
     - name: Creating build
-      run: cd test_project && npm install react-scripts -g --silent && yarn add react && yarn build
+      run: cd assignment-5 && npm install react-scripts -g --silent && yarn add react && yarn build
     
     - name: installing surge  
       run: npm install --global surge
     
     - name: deploying on surge
-      run: surge test_project/build zaeem_test_project.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
+      run: surge assignment-5/build zaeem_test_project.surge.sh --token ${{secrets.MY_SURGE_TOKEN}}
