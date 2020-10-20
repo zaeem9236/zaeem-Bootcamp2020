@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Parent from './Parent';
+import CentralisedData from './CentralisedData';
 import './App.css';
 
 function App() {
+  let [count, updateCount] = useState(0);
   return (
     <React.Fragment>
-      <Parent/>
+        <CentralisedData.Provider value={[count, updateCount]}>
+          <Parent />
+        </CentralisedData.Provider>
     </React.Fragment>
   );
 }
