@@ -7,7 +7,7 @@ function Child1() {
     console.log(count);
     return (
         <React.Fragment>
-            <h1 className='child1_heading'>Increment is performed using Context-API</h1>
+            <h2 className='child1_heading'>Increment/Decrement is performed using <span className='child1_method'> Context-API</span></h2>
             <h3 className='child1_counter'>counter: {count}</h3>
             <div className='buttons'>
                 <button onClick={() => { updateCount(++count) }} className='child1_button'>

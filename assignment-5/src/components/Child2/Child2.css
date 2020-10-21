@@ -1,7 +1,13 @@
 .child2_heading{
+    margin-top: 5%;
     display: flex;
     justify-content: center;
-    color: yellow;
+    color: rgb(158, 102, 29);
+}
+
+.child2_method{
+    padding-left: 10px;
+    color: rgba(255, 255, 0, 0.787);
 }
 
 .child2_counter{
