@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.parent{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.child1{
+    background-color: rgb(27, 82, 11);
+    width: 50vw;
+}
+
+.child2{
+    background-color: coral;
+    width: 50vw;
+}
