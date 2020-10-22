@@ -1,10 +1,10 @@
 import React from 'react';
 import Parent from './Parent';
 
-function App(){
-  return(
+function App() {
+  return (
     <React.Fragment>
-      <Parent />
+        <Parent />
     </React.Fragment>
   );
 }

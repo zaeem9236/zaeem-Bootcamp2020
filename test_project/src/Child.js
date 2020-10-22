@@ -1,9 +1,11 @@
 import React from 'react';
 
 function Child() {
-    return(
+
+    return (
         <React.Fragment>
-            <h1>this is child component</h1>
+            <h1>I am child component</h1>
+            <h2>Value i received is : </h2>
         </React.Fragment>
     );
 }
