@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Add_transaction() {
+export default function AddTransaction() {
     return(
         <React.Fragment>
             <h4>Add New Transaction</h4>

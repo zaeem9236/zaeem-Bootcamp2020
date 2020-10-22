@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Transaction_history() {
+export default function TransactionHistory() {
     return(
         <React.Fragment>
             <h4>Transaction_history</h4>

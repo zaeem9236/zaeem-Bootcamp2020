@@ -2,8 +2,8 @@ import React from 'react';
 import Header from './components/Header';
 import Balance from './components/Balance';
 import Summary from './components/Summary';
-import Transaction_history from './components/Tranaction_history';
-import Add_transaction from './components/Add_transaction';
+import TransactionHistory from './components/TranactionHistory';
+import AddTtransaction from './components/AddTransaction';
 import './App.css';
 
 function App() {
@@ -13,8 +13,8 @@ function App() {
         <Header />
         <Balance />
         <Summary />
-        <Transaction_history />
-        <Add_transaction />
+        <TransactionHistory />
+        <AddTransaction />
       </div>
     </React.Fragment>
   );
