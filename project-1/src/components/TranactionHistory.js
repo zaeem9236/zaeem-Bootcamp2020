@@ -1,15 +1,25 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import TransContext from '../TransContext';
 
 export default function TransactionHistory() {
-    return(
+
+    let transactions = useContext(TransContext)
+
+    return (
         <React.Fragment>
-            <h4>Transaction_history</h4>
+            <div className='transaction_history'>
+                <h4>Transaction_history</h4>
             <ul>
-                <li>
-                    <span>desc1 </span>
-                    <span> price1</span>
-                </li>
+                {transactions.map((transObj, index) =>{
+                    return (
+                        <li>
+                            <span>{transObj.description}</span>
+                            <span>{transObj.amount}</span>
+                        </li>
+                    )
+                })}
             </ul>
+            </div>
         </React.Fragment>
     );
 }

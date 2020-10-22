@@ -1,10 +1,12 @@
 import React from 'react';
 
 export default function Balance() {
-    return(
+    return (
         <React.Fragment>
-            <h3>Current Balance</h3>
-            <h3>$ 0.00</h3>
+            <div className='balance'>
+                <h4>Current Balance</h4>
+                <h2>$ 0.00</h2>
+            </div>
         </React.Fragment>
     );
 }

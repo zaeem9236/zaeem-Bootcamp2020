@@ -1,23 +1,25 @@
 import React from 'react';
 
 export default function AddTransaction() {
-    return(
+    return (
         <React.Fragment>
-            <h4>Add New Transaction</h4>
+            <div className='add_transaction'>
+                <h4>Add New Transaction</h4>
 
-            <form>
-                <label>
-                    Enter Description <br />
-                    <input type='text' />
-                </label>
+                <form>
+                    <label>
+                        Enter Description <br />
+                        <input type='text' />
+                    </label>
                     <br />
-                <label>
-                    Enter Amount <br />
-                    <input type='number'/>
-                </label>
-                <br />
-                <input type='submit' value='Add_Transaction'/>
-            </form>
+                    <label>
+                        Enter Amount <br />
+                        <input type='number' />
+                    </label>
+                    <br />
+                    <input type='submit' value='Add_Transaction' />
+                </form>
+            </div>
         </React.Fragment>
     );
 }

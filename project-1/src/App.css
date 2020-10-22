@@ -12,7 +12,49 @@
   flex-direction: column;
 }
 
+.balance{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.balance > h2{
+  display: flex;
+  justify-content: center;
+}
+
 .summary{
   display: flex;
   flex-direction: row;
+}
+
+.summary_income{
+  border: 1px solid black ;
+  padding: 30px;
+}
+
+.income_amount{
+  color: green;
+}
+
+.summary_expense{
+  border: 1px solid black ;
+  padding: 30px;
+}
+
+.expense_amount{
+  color: rgb(207, 11, 11);
+}
+
+.transaction_history{
+  margin-top: 20px;
+}
+
+.transaction_history > ul{
+  list-style: none;
+}
+
+.add_transaction{
+  margin-top: 30px;
 }
