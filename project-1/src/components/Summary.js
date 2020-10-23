@@ -24,8 +24,6 @@ function Summary() {
         return (expense);
     }
     
-    // console.log('income = ' + income);
-    let expense = 2;
     return (
         <React.Fragment>
             <div className='summary'>

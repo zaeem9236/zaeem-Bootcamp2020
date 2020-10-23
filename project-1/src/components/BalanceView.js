@@ -8,13 +8,13 @@ function BalanceView() {
         let income = 0;
         let expense = 0;
 
-        for(var i=0; i< transactionsHistory.length; i++){
+        for(let i=0; i< transactionsHistory.length; i++){
             if(transactionsHistory[i].amount > 0){
                 income += transactionsHistory[i].amount
             }
         }
         
-        for(var i=0; i< transactionsHistory.length; i++){
+        for(let i=0; i< transactionsHistory.length; i++){
             if(transactionsHistory[i].amount < 0){
                 expense += transactionsHistory[i].amount
             }
