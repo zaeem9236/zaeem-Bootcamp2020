@@ -3,14 +3,13 @@ import CentralisedData from '../CentralisedData';
 
 function AddTransaction() {
 
-    let [state, dispatch] = useContext(CentralisedData);
-     state = state; // for dummy using state to avoid error in production build
+    let dispatch = useContext(CentralisedData);
     let [add_desc, set_desc] = useState('');
     let [add_amount, set_amount] = useState('');
 
     function submitNewData(event) {
         event.preventDefault();
-        dispatch({
+        dispatch[1]({
             type: 'Add_Transaction',
             payload: { description: add_desc, amount: add_amount }
         })
