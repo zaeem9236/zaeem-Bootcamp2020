@@ -1,9 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import CentralisedData from '../CentralisedData';
 
-function TransactionHistory(){
-    return(
+
+function TransactionHistory() {
+    //  let transactionsHistory = [
+    //      {description: 'aloo', amount: 122},
+    //      {description: 'chana', amount: 333},
+    //      {description: 'caat', amount: 444}
+    //  ];
+    //  console.log(transactionsHistory);
+
+      let [transactionsHistory,dispatch] = useContext(CentralisedData);
+     console.log(transactionsHistory);
+    return (
         <React.Fragment>
-            <h3>this is TransactionHistory component</h3>
+            <div className='transaction_history'>
+                <ul>{transactionsHistory.map(function (transObj, index){
+                    return (<li key={index}>
+                        <span>{transObj.description}</span>
+                        <span>{transObj.amount}</span>
+                    </li>);
+                })}
+                </ul>
+            </div>
         </React.Fragment>
     );
 }
