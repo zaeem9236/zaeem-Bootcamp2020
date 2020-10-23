@@ -3,9 +3,9 @@ import CentralisedData from '../CentralisedData';
 
 function AddTransaction() {
 
-    let [state, dispatch] = useContext(CentralisedData);
+    let [dispatch] = useContext(CentralisedData);
     let [add_desc, set_desc] = useState('');
-    let [add_amount, set_amount] = useState(0);
+    let [add_amount, set_amount] = useState('');
 
     function submitNewData(event) {
         event.preventDefault();
@@ -13,6 +13,9 @@ function AddTransaction() {
             type: 'Add_Transaction',
             payload: { description: add_desc, amount: add_amount }
         })
+
+        set_desc('');
+        set_amount('');
     }
     return (
         <React.Fragment>
@@ -21,13 +24,23 @@ function AddTransaction() {
                     <br />
                     <label>
                         Description<br />
-                        <input type='text' onChange={(ev) => { set_desc(ev.target.value) }} />
+                        <input type='text'
+                        required
+                        onChange={(ev) => { set_desc(ev.target.value) }}
+                        placeholder='Detail of Tranaction' 
+                        value={add_desc}
+                        />
                     </label>
 
                     <br />
                     <label>
                         Amount<br />
-                        <input type='number' onChange={(ev) => { set_amount(ev.target.value) }} />
+                        <input type='number'
+                        required 
+                        onChange={(ev) => { set_amount(Number(ev.target.value)) }}
+                        placeholder='Amount in Dollar'
+                        value={add_amount} 
+                        />
                     </label>
 
                     <br />

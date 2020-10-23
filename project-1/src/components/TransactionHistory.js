@@ -3,14 +3,8 @@ import CentralisedData from '../CentralisedData';
 
 
 function TransactionHistory() {
-    //  let transactionsHistory = [
-    //      {description: 'aloo', amount: 122},
-    //      {description: 'chana', amount: 333},
-    //      {description: 'caat', amount: 444}
-    //  ];
-    //  console.log(transactionsHistory);
-
-      let [transactionsHistory,dispatch] = useContext(CentralisedData);
+   
+      let [transactionsHistory] = useContext(CentralisedData);
      console.log(transactionsHistory);
     return (
         <React.Fragment>
