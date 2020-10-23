@@ -1,60 +1,38 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+.App {
+  text-align: center;
 }
 
-.main_div{
-  height: 100vh;
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-direction: column;
-}
-
-.balance{
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.balance > h2{
-  display: flex;
-  justify-content: center;
+.App-link {
+  color: #61dafb;
 }
 
-.summary{
-  display: flex;
-  flex-direction: row;
-}
-
-.summary_income{
-  border: 1px solid black ;
-  padding: 30px;
-}
-
-.income_amount{
-  color: green;
-}
-
-.summary_expense{
-  border: 1px solid black ;
-  padding: 30px;
-}
-
-.expense_amount{
-  color: rgb(207, 11, 11);
-}
-
-.transaction_history{
-  margin-top: 20px;
-}
-
-.transaction_history > ul{
-  list-style: none;
-}
-
-.add_transaction{
-  margin-top: 30px;
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
