@@ -1,10 +1,16 @@
-import React from 'react';
-import Child from './Child.js';
+import React, { useContext, useReducer } from 'react';
+import Parent from './Parent.js';
+import CentralisedData from './CentralisedData';
+import AppReducer from './AppReducer';
+
 
 function App() {
+  let [state, dispatch] =useReducer(AppReducer, 12);
   return (
     <React.Fragment>
-        <Child />
+        <CentralisedData.Provider value={[state, dispatch]}>
+        <Parent />
+        </CentralisedData.Provider>
     </React.Fragment>
   );
 }
