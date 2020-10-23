@@ -3,7 +3,8 @@ import CentralisedData from '../CentralisedData';
 
 function AddTransaction() {
 
-    let [dispatch] = useContext(CentralisedData);
+    let [state, dispatch] = useContext(CentralisedData);
+     state = state; // for dummy using state to avoid error in production build
     let [add_desc, set_desc] = useState('');
     let [add_amount, set_amount] = useState('');
 
