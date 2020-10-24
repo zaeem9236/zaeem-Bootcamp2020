@@ -9,7 +9,7 @@
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  height: 100vh;
+  /* height: 100vh; */
   background-color: rgb(163, 232, 245);
 }
 
@@ -88,4 +88,29 @@
 
   display: flex;
   justify-content: space-between;
+}
+
+
+.transaction_amount{
+display: flex;
+align-items: center;
+}
+
+.edit_icon{
+  height: 30px;
+  width: 50px;
+  fill: rgb(13, 59, 102);
+  margin-right: -10px;
+}
+.edit_icon:hover{
+  fill: rgb(13, 195, 44);
+}
+
+.delete_icon{
+  height: 30px;
+  width: 50px;
+  fill: rgb(13, 59, 102);
+}
+.delete_icon:hover{
+  fill: rgb(185, 15, 15);
 }
