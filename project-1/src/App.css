@@ -7,10 +7,14 @@
 .main_div{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  background-color: aqua;
   height: 100vh;
+  background-color: rgb(163, 232, 245);
+}
+
+.header{
+  margin-top: 10px;
 }
 
 .balance_view{
@@ -19,34 +23,69 @@
   flex-direction: column;
   align-items: center;
   margin: 30px;
+
+}
+
+.balance_view > h2{
+  font-weight: 400;
+  font-size: 20px;
 }
 
 .summary{
+  margin-top: -10px;
   display: flex;
   flex-direction: row;
 }
 
 .income{
-  margin-right: 10px;
-  border: 1px solid rgb(0, 0, 0);  
+  /* border: 1px solid rgb(0, 0, 0);   */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  justify-content: center;
+  padding: 20px 60px 20px 60px
+}
+
+.income_amount{
+  color: rgb(13, 195, 44);
+  font-size: 25px;
 }
 
 .expense{
-  margin-left: 10px;
-  border: 1px solid rgb(0, 0, 0);  
+  /* border: 1px solid rgb(0, 0, 0);   */
+  border-left: 1px solid rgb(180, 176, 176);  
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   padding: 10px;
+  padding: 20px 60px 20px 60px
 }
 
-.transaction_history > ul > li{
+.expense_amount{
+  color: rgb(185, 15, 15);
+  font-size: 25px;
+}
+
+.summary_text{
+  font-weight: 400;
+}
+
+.transaction_history_text {
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(98, 94, 94);
+}
+
+.transaction_li{
   border: 1px solid rgb(0, 0, 0);
-  margin-top: 5px;
+  margin-top: 15px;
+  padding:10px;
   margin-bottom: 5px;
   list-style: none;
+
+  display: flex;
+  justify-content: space-between;
 }

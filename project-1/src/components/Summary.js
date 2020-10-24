@@ -28,13 +28,13 @@ function Summary() {
         <React.Fragment>
             <div className='summary'>
                 <div className='income'>
-                    <h3>Income</h3>
-                    <h3>{get_income()}</h3>
+                    <h3 className='summary_text'>INCOME</h3>
+                    <h3 className='income_amount'>{get_income()}</h3>
                 </div>
 
                 <div className='expense'>
-                    <h3>expense</h3>
-                    <h3>{get_expense()}</h3>
+                    <h3 className='summary_text'>EXPENSE</h3>
+                    <h3 className='expense_amount'>{get_expense()}</h3>
                 </div>
             </div>
         </React.Fragment>
