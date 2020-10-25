@@ -3,7 +3,6 @@
   padding: 0px;
   box-sizing: border-box;
   font-family: 'Times New Roman', Times, serif;
-
 }
 
 
@@ -11,12 +10,8 @@
 .main_div{
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   height: 100vh;
-  /* margin: 0px; */
-  /* background-color: rgb(163, 232, 245); */
-  /* background-size: cover; */
   overflow: scroll;
 }
 
@@ -25,13 +20,11 @@
 } 
 
 .balance_view{
-  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20px;
   color: rgb(52, 54, 54);
-
 }
 
 .balance_view > h2{
@@ -40,20 +33,17 @@
 }
 
 .summary{
-  /* margin-top: -10px; */
   display: flex;
   flex-direction: row;
 }
 
 .income{
-  /* border: 1px solid rgb(0, 0, 0);   */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 15px 60px 15px 60px;
   color: rgb(52, 54, 54);
-
 }
 
 .income_amount{
@@ -62,7 +52,6 @@
 }
 
 .expense{
-  /* border: 1px solid rgb(0, 0, 0);   */
   border-left: 1px solid rgb(180, 176, 176);  
   display: flex;
   flex-direction: column;
@@ -88,7 +77,6 @@
   padding-right: 50px;
   padding-bottom: 10px;
   color: rgb(52, 54, 54);
-
   border-bottom: 1px solid rgb(98, 94, 94);
 }
 
@@ -100,9 +88,6 @@
 .transaction_amount{
   font-size: 21px;
   font-weight: 500;
-
-
-
 }
 
 .transaction_li{
@@ -112,7 +97,6 @@
   padding:10px;
   margin-bottom: 5px;
   list-style: none;
-
   display: flex;
   justify-content: space-between;
 }
@@ -133,8 +117,8 @@
 
 
 .transaction_amount{
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .edit_icon{
@@ -157,9 +141,7 @@ align-items: center;
 }
 
 .input_description{
-  /* background-color: rgb(185, 15, 15); */
   border-radius: 5px !important;
-  /* padding: 8px 60px 8px 60px; */
   height: 40px !important;
   width: 350px !important;
 }
