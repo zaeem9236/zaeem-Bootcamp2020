@@ -12,7 +12,7 @@ function TransactionHistory() {
                     <h2>Transaction History</h2>
                 </div>
                 <ul>{transactionsHistory.map(function (transObj, index) {
-                    return (<li className={`transaction_li ${transObj.amount > 0 ? 'transaction_amount_positive' : 'transaction_amount_negative'}`} key={index}>
+                    return (<li className={`transaction_li ${transObj.amount >0 ? 'transaction_amount_positive' : 'transaction_amount_negative'}`} key={index}>
                         <span className='transaction_description'>{transObj.description}</span>
                         <span className='transaction_amount'>
                             $ {transObj.amount}
