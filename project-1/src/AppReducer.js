@@ -1,4 +1,3 @@
-import TransactionHistory from "./components/TransactionHistory";
 
 const reducer = (state, action) => {
     switch (action.type) {
