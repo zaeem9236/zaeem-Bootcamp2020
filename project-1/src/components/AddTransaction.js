@@ -25,15 +25,8 @@ function AddTransaction() {
                     <br />
                     <label>
                         Description<br />
-                        {/* <input type='text' className='input_description'
-                            required
-                            onChange={(ev) => { set_desc(ev.target.value) }}
-                            placeholder='Detail of Tranaction'
-                            value={add_desc}
-                        /> */}
                         <InputGroup size="lg" >
                             <InputGroup.Prepend >
-                                {/* <InputGroup.Text id="inputGroup-sizing-lg">Large</InputGroup.Text> */}
                             </InputGroup.Prepend>
                             <FormControl
                                 type='text'
@@ -51,15 +44,9 @@ function AddTransaction() {
                     <br />
                     <label>
                         Amount <br />
-                        {/* <input type='number' className='input_amount'
-                        required 
-                        onChange={(ev) => { set_amount(Number(ev.target.value)) }}
-                        placeholder='Amount in Dollar'
-                        value={add_amount} 
-                        /> */}
+
                         <InputGroup size="lg" >
                             <InputGroup.Prepend >
-                                {/* <InputGroup.Text id="inputGroup-sizing-lg">Large</InputGroup.Text> */}
                             </InputGroup.Prepend>
                             <FormControl
                                 type='number'
@@ -75,7 +62,6 @@ function AddTransaction() {
                     </label>
 
                     <br />
-                    {/* <input  type="submit" value='Add Transaction' /> */}
 
                     <div className='button_section'>
                         <Button className='submit_button' variant="success" type='submit' value='Add Transaction'>Add Transaction</Button>

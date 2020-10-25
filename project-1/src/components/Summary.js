@@ -13,7 +13,7 @@ function Summary() {
         }
         return (income);
     }
-    
+
     function get_expense() {
         let expense = 0;
 
@@ -23,7 +23,7 @@ function Summary() {
         }
         return (expense);
     }
-    
+
     return (
         <React.Fragment>
             <div className='summary'>
