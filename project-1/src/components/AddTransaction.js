@@ -50,7 +50,7 @@ function AddTransaction() {
 
                     <br />
                     <label>
-                        Amount<br />
+                        Amount <br />
                         {/* <input type='number' className='input_amount'
                         required 
                         onChange={(ev) => { set_amount(Number(ev.target.value)) }}
