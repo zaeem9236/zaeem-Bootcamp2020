@@ -2,6 +2,8 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 
@@ -15,11 +17,12 @@
   /* margin: 0px; */
   /* background-color: rgb(163, 232, 245); */
   /* background-size: cover; */
+  overflow: scroll;
 }
-/* 
+
 .header{
-  margin-top: 10px;
-} */
+  color: rgb(52, 54, 54);
+} 
 
 .balance_view{
   /* border: 1px solid black; */
@@ -27,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   margin: 20px;
+  color: rgb(52, 54, 54);
 
 }
 
@@ -47,11 +51,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 15px 60px 15px 60px
+  padding: 15px 60px 15px 60px;
+  color: rgb(52, 54, 54);
+
 }
 
 .income_amount{
-  color: rgb(13, 195, 44);
+  color: rgb(18, 212, 51);
   font-size: 25px;
 }
 
@@ -63,7 +69,8 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  padding: 15px 60px 15px 60px
+  padding: 15px 60px 15px 60px;
+  color: rgb(52, 54, 54);
 }
 
 .expense_amount{
@@ -80,7 +87,22 @@
   padding-left: 50px;
   padding-right: 50px;
   padding-bottom: 10px;
+  color: rgb(52, 54, 54);
+
   border-bottom: 1px solid rgb(98, 94, 94);
+}
+
+.transaction_description{
+  font-size: 21px;
+  font-weight: 500;
+}
+
+.transaction_amount{
+  font-size: 21px;
+  font-weight: 500;
+
+
+
 }
 
 .transaction_li{
