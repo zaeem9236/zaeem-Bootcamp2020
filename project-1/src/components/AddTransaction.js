@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react';
 import CentralisedData from '../CentralisedData';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { InputGroup, FormControl } from 'react-bootstrap';
+import { Button, InputGroup, FormControl } from 'react-bootstrap';
 function AddTransaction() {
 
     let dispatch = useContext(CentralisedData);
@@ -75,8 +75,11 @@ function AddTransaction() {
                     </label>
 
                     <br />
-                    <input type="submit" value='Add Transaction' />
+                    {/* <input  type="submit" value='Add Transaction' /> */}
 
+                    <div className='button_section'>
+                        <Button className='submit_button' variant="success" type='submit' value='Add Transaction'>Add Transaction</Button>
+                    </div>
                 </form>
             </div>
         </React.Fragment>

@@ -4,25 +4,29 @@
   box-sizing: border-box;
 }
 
+
+
 .main_div{
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
-  /* height: 100vh; */
+  height: 100vh;
+  /* margin: 0px; */
   background-color: rgb(163, 232, 245);
+  /* background-size: cover; */
 }
 
 .header{
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .balance_view{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 30px;
+  margin: 20px;
 
 }
 
@@ -32,7 +36,7 @@
 }
 
 .summary{
-  margin-top: -10px;
+  /* margin-top: -10px; */
   display: flex;
   flex-direction: row;
 }
@@ -43,7 +47,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px 60px 20px 60px
+  padding: 15px 60px 15px 60px
 }
 
 .income_amount{
@@ -59,7 +63,7 @@
   align-items: center;
   justify-content: center;
   padding: 10px;
-  padding: 20px 60px 20px 60px
+  padding: 15px 60px 15px 60px
 }
 
 .expense_amount{
@@ -117,12 +121,24 @@ align-items: center;
 
 .input_description{
   /* background-color: rgb(185, 15, 15); */
-  border-radius: 5px;
+  border-radius: 5px !important;
   /* padding: 8px 60px 8px 60px; */
-  height: 20px;
-  width: 5px;
+  height: 40px !important;
+  width: 350px !important;
 }
 
 .input_amount{
-  background-color: rgb(185, 15, 15);
+  border-radius: 5px !important;
+  height: 40px !important;
+  width: 350px !important;
+}
+
+.button_section{
+  display: flex;
+  justify-content: center;
+}
+
+.submit_button{
+  margin-top: 15px;
+  width: 350px;
 }
