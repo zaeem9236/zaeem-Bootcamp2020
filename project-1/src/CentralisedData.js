@@ -5,6 +5,7 @@ let transactions = [
     // { description: 'haircut', amount: 250 },
     // { description: 'petrol', amount: 3000 },
     // { description: 'kharcha', amount: -50 }
+
 ];
 
  let GlobalTransactions = createContext(transactions);
