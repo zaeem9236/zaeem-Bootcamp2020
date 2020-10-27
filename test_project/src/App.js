@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 
 function App() {
 
+  var [data, setdata] = useState(0);
+  
+   let raw = fetch('https://jsonplaceholder.typicode.com/todos/1');
+      raw.then(function(a){
+          return a.json();
+      })
+      raw.then(function(s){
+        console.log(s.status);
+        setdata(s);
+      },)
 
   return (
     <React.Fragment>
-    <h2> hello there </h2>
+      <h1>{data.status}</h1>
     </React.Fragment>
   );
 }
