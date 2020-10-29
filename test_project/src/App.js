@@ -1,18 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 
 function App() {
-  
-  let promise = fetch('https://jsonplaceholder.typicode.com/todos/1');
-    promise.then(function(response){
-      return (response.json());
-    })
-    promise.then(function(response){
-      console.log(response);
-    })
+
+  let postdata = fetch('https://jsonplaceholder.typicode.com/posts',
+  {
+    method:'POST',
+    body: JSON.stringify({
+      title: 'xyz',
+      body: 'abc',
+      userId: 1
+    }),
+    headers:{
+      'Content-type': 'application/json; charset=UTF-8',
+    }
+  });
+  postdata.then((resolve)=>{
+    return ( resolve.json() );
+  })
+  .then((resolve)=>{
+    console.log(resolve);
+  });
+
+
   return (
     <React.Fragment>
-      <h1>fetching data...</h1>
+      <h1>App.js</h1>
     </React.Fragment>
   );
 }
