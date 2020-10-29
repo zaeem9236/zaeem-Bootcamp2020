@@ -43,7 +43,7 @@ function AddTransaction() {
 
                     <br />
                     <label>
-                        Amount <span>Enter negative sign before amount for Expense</span><br />
+                        Amount <br /><span className='expense_message'>Enter negative sign (-) before amount for Expense</span><br />
 
                         <InputGroup size="lg" >
                             <InputGroup.Prepend >
