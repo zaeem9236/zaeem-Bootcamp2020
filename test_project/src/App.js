@@ -1,12 +1,11 @@
 import React from 'react';
+import Piechart from './Piechart';
 
 
 function App() {
-
   return (
     <React.Fragment>
-      <h1>Class 9</h1>
-      
+      <Piechart></Piechart>
     </React.Fragment>
   );
 }
