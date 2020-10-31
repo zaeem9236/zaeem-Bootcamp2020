@@ -2,40 +2,26 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  color: rgb(255, 0, 0);
 }
 
 .main_div{
-  background-color: rgb(42, 42, 46);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.box{
-  background-color: aliceblue;
-  width: 50%;
-  height: 50%;
+.heading_1{
+  color: red;
+  background-color: black;
+  /* transform: translateY(800%); */
+  animation-name: test;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
 }
-
-.sub_box1{
-  background-color: aqua;
-  width: 70px;
-  height: 70px;
-  position: relative;
-  z-index: 1;
+@keyframes test{
+  0% {transform: translateX(-420%);opacity: 0;}
+  25% {opacity: 0.1;}
+  100% {transform: translateX(0px);}
 }
-
-.sub_box2{
-  background-color: rgb(219, 118, 71);
-  width: 70px;
-  height: 70px;
-  position: relative;
-  top: -70px;
-
-
-  
-  /* display: none; */
-}
-
