@@ -4,7 +4,16 @@ import './App.css';
 function App() {
   return (
     <React.Fragment>
-      <h1>project-2</h1>
+      <div className='main_div'>
+        <div className='box1'>
+          <p>box1</p>
+        </div>
+
+        <div className='box2'>
+        <p>box2</p>
+        </div>
+
+      </div>
     </React.Fragment>
   );
 }
