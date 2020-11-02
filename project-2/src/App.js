@@ -8,8 +8,8 @@ function App() {
   return (
     <React.Fragment>
       <div className='main_div'>
-        <Navbar/>
-        {/* <SummaryView/> */}
+        {/* <Navbar/> */}
+        <SummaryView/>
         {/* <Visualization/> */}
       </div>
     </React.Fragment>
