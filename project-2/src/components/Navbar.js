@@ -7,6 +7,8 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import covid19_icon from '../images/covid19.png';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -17,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    marginLeft: '50px',
+    marginLeft: '10px',
     // display: 'none',
     [theme.breakpoints.up('sm')]: {
       display: 'block',
@@ -62,6 +64,10 @@ const useStyles = makeStyles((theme) => ({
       },
     },
   },
+  img: {
+    height: '60px',
+    width: '60px'
+  }
 }));
 
 export default function SearchAppBar() {
@@ -71,9 +77,13 @@ export default function SearchAppBar() {
     <div className={classes.root}>
       <AppBar position="static">
         <Toolbar>
-         
+        <img className={classes.img} src={covid19_icon} alt=''></img>
+
           <Typography className={classes.title} variant="h6" noWrap>
-            Material-UIde
+            Covid-19 Tracker
+          </Typography>
+          <Typography>
+          <span>Last updated: 0 Nov 2020</span>
           </Typography>
           {/* <div className={classes.search}>
             <div className={classes.searchIcon}>

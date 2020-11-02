@@ -5,16 +5,16 @@
     /* border: 1px solid red; */
 }
 
-.covid_image{
-    border: 1px solid red;
+
+
+.select{
+    /* border: 5px solid green; */
+    display: flex;
+    justify-content: center;
+
 }
 
-.image_and_stats{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+
 
 
 
