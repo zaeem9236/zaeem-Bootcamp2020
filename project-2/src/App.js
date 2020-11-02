@@ -8,7 +8,7 @@ function App() {
   return (
     <React.Fragment>
       <div className='main_div'>
-        {/* <Navbar/> */}
+        <Navbar/>
         <SummaryView/>
         {/* <Visualization/> */}
       </div>
