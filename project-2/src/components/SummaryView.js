@@ -6,17 +6,26 @@ import Grid from '@material-ui/core/Grid';
 const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
-        maxWidth: '1000px',
-        margin: '0 auto'
+        maxWidth: '700px',
+        // margin: '0 auto',
+        // border: '1px solid Red'
     },
     paper: {
-        padding: theme.spacing(2),
+        padding: theme.spacing(8),
+        minWidth: '650px',
         textAlign: 'center',
         color: theme.palette.text.secondary,
     },
+    gridContainer: {
+        // border: '1px solid Red',
+        display: 'flex',
+        flexDirection: 'column',
+        height: '80vh'
+    },
     gridItems: {
-        border: '1px solid Red',
-        // maxWidth: '300px',
+        display: 'flex',
+        alignItems: 'center',
+        // border: '1px solid Red'
     }
 }));
 
@@ -26,7 +35,7 @@ function SummaryView() {
 
     return (
         <div className={classes.root}>
-            <Grid container spacing={0}>
+            <Grid container spacing={0} className={classes.gridContainer}>
                 <Grid item xs={12} sm={4} className={classes.gridItems}>
                     <Paper className={classes.paper}>View 1</Paper>
                 </Grid>

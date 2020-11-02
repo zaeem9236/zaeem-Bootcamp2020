@@ -2,6 +2,18 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    /* border: 1px solid red; */
+}
+
+.covid_image{
+    border: 1px solid red;
+}
+
+.image_and_stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
