@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <React.Fragment>
-      <h1>project 2</h1>
+      <h1>project-2</h1>
     </React.Fragment>
   );
 }
