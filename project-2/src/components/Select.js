@@ -25,9 +25,7 @@ export default function Selects() {
         updateSelectedValue(value);
     };
 
-    fetch('https://api.covid19api.com/countries')
-    .then(response => response.json())
-    .then(json => console.log(json[1],"now"))
+  
     
     return (
         <div className='select'>
@@ -44,7 +42,7 @@ export default function Selects() {
                 </NativeSelect>
                 <FormHelperText>Select Country</FormHelperText>
             </FormControl>
-            {console.log(selectedValue)}
+            {/* {console.log(selectedValue)} */}
         </div>
     );
 }
