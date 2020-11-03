@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     /* border: 1px solid red; */
+    
 }
 
 
@@ -11,9 +15,97 @@
     /* border: 5px solid green; */
     display: flex;
     justify-content: center;
+}
+
+.confirmed{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50px;
 
 }
 
+/* Confirmed tab */
+.confirmed_numbers{
+    background-color: rgb(216, 163, 163);
+    padding: 40px 0px;
+    border-radius: 1px;
+
+}
+.confirmed_numbers_text{
+    font-size: 35px;
+    font-weight: 500;
+    color: red;
+}
+
+.confirmed_title{
+    background-color: rgba(255, 0, 0, 0.657);
+    padding: 10px 0;
+    border-radius: 1px;
+
+}
+.confirmed_title > p{
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-family: 'Patua One', cursive;
+    color: rgba(255, 0, 0, 0.952);
+}
+
+
+/* Recovered tab */
+.recovered_numbers{
+    background-color: rgb(22, 73, 182);
+    padding: 40px 0px;
+    border-radius: 1px;
+
+}
+.recovered_numbers_text{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(21, 47, 102);
+}
+
+.recovered_title{
+    background-color: rgba(16, 29, 214, 0.459);
+    padding: 10px 0;
+    border-radius: 1px;
+
+}
+.recovered_title > p{
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-family: 'Patua One', cursive;
+    color: rgba(24, 38, 230, 0.952);
+}
+
+
+/* Death tab */
+.death_numbers{
+    background-color: rgb(81, 82, 83);
+    padding: 40px 0px;
+    border-radius: 1px;
+
+}
+.death_numbers_text{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(47, 48, 51);
+}
+
+.death_title{
+    background-color: rgba(103, 105, 107, 0.103);
+    padding: 10px 0;
+    border-radius: 1px;
+
+}
+.death_title > p{
+    font-size: 18px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-family: 'Patua One', cursive;
+    color: rgba(48, 48, 51, 0.952);
+}
 
 
 

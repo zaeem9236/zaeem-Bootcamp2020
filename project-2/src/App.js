@@ -11,7 +11,7 @@ function App() {
       <div className='main_div'>
         <Navbar />
         <Select/>
-          {/* <SummaryView /> */}
+          <SummaryView />
         {/* <Visualization/> */}
       </div>
     </React.Fragment>
