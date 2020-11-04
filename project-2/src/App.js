@@ -10,15 +10,17 @@ import './App.css';
 
 
 function App() {
+  const [country, updateCountry] = useState('-1');
   let[globalCovidData, setGlobalCovidData] = useState({});
   // console.log(globalCovidData.Countries,"in app component");
+  // console.log(country,'selected Country');
   return (
     <React.Fragment>
       <div className='main_div'>
         <CovidData setGlobalCovidData={setGlobalCovidData} />
         <Navbar />
-        <Select globalCovidData={globalCovidData}/>
-        <SummaryView />
+        <Select globalCovidData={globalCovidData} updateCountry={updateCountry}/>
+        <SummaryView globalCovidData={globalCovidData} country={country} />
         {/* <Visualization/> */}
       </div>
     </React.Fragment>

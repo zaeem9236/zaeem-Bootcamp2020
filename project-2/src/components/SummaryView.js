@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import AnimatedNumber from "react-animated-numbers"
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -26,9 +28,25 @@ const useStyles = makeStyles((theme) => ({
     }
 }));
 
-export default function Summary() {
+export default function Summary(props) {
     const classes = useStyles();
 
+    var Confirmed = 0, Recovered = 0, Deaths = 0; 
+
+    if (props.globalCovidData.Countries !== undefined) { // check: Data is valid
+        if (props.country === '-1') { //check: World Data
+             Confirmed = props.globalCovidData.Global.TotalConfirmed;
+             Recovered = props.globalCovidData.Global.TotalRecovered;
+             Deaths = props.globalCovidData.Global.TotalDeaths;
+        } else { //check: Selected Country Data
+            Confirmed = props.globalCovidData.Countries[props.country].TotalConfirmed;
+            Recovered = props.globalCovidData.Countries[props.country].TotalRecovered;
+            Deaths = props.globalCovidData.Countries[props.country].TotalDeaths;
+        }
+    }
+    console.log('Confirmed Cases', Confirmed)
+    console.log('Recovered Cases', Recovered)
+    console.log('Deaths Cases', Deaths)
 
 
     return (
@@ -38,7 +56,7 @@ export default function Summary() {
                     <Paper className={classes.paper}>
                         <div className='confirmed'>
                             <div className='confirmed_numbers'>
-                                <p className='confirmed_numbers_text'>4561</p>
+                                <p className='confirmed_numbers_text'>{Confirmed}</p>
                             </div>
                             <div className='confirmed_title'><p>Confirmed</p></div>
                         </div>
@@ -48,7 +66,7 @@ export default function Summary() {
                     <Paper className={classes.paper}>
                         <div className='recovered'>
                             <div className='recovered_numbers'>
-                                <p className='recovered_numbers_text'>1357</p>
+                                <p className='recovered_numbers_text'>{Recovered}</p>
                             </div>
                             <div className='recovered_title'><p>Recovered</p></div>
                         </div>
@@ -56,9 +74,9 @@ export default function Summary() {
                 </Grid>
                 <Grid item xs={12} sm={4}>
                     <Paper className={classes.paper}>
-                    <div className='death'>
+                        <div className='death'>
                             <div className='death_numbers'>
-                                <p className='death_numbers_text'>4561</p>
+                                <p className='death_numbers_text'>{Deaths}</p>
                             </div>
                             <div className='death_title'><p>Confirmed</p></div>
                         </div>

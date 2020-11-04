@@ -4,24 +4,3 @@
   box-sizing: border-box;
 }
 
-.main_div{
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.heading_1{
-  color: red;
-  background-color: black;
-  /* transform: translateY(800%); */
-  animation-name: test;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
-@keyframes test{
-  0% {transform: translateX(-420%);opacity: 0;}
-  25% {opacity: 0.1;}
-  100% {transform: translateX(0px);}
-}
