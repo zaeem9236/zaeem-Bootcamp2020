@@ -15,7 +15,12 @@
 .select{
     /* border: 5px solid green; */
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.country_name{
+    font-size: 25px;
 }
 
 .confirmed{

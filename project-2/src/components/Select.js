@@ -20,17 +20,22 @@ export default function Selects(props) {
     const classes = useStyles();
     // console.log(props,'check')
     let Countries = [];
-
     if (props.globalCovidData.Countries !== undefined) { //check: data is valid 
         Countries = props.globalCovidData.Countries;
         // console.log(props.globalCovidData,'in selected ')
+        // countryName = props.globalCovidData.Countries[props.country];
+        //  console.log(props.globalCovidData.Countries[0],'sfsdf');
+         if (props.country === '-1'){
+             var countryName = 'Global'; 
+         }else{
+             var countryName = props.globalCovidData.Countries[props.country].Country;
+         }
     }
 
 
     const handleChange = (event) => {
         const value = event.target.value;
-        props.updateCountry(value);
-        
+        props.updateCountry(value);        
     };
 
 
@@ -57,6 +62,11 @@ export default function Selects(props) {
                 <FormHelperText >Select Country</FormHelperText>
             </FormControl>
             {/* {console.log(selectedValue)} */}
+
+            <div>
+                <p className='country_name'>{countryName}</p>
+                
+            </div>
         </div>
     );
 }
