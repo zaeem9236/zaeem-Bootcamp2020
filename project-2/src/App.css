@@ -119,6 +119,20 @@
     color: rgba(48, 48, 51, 0.952);
 }
 
+.bar_chart_div{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 10px 10px;
+}
+
+.bar_chart{
+      height: 50vh;
+    width: 70%;
+    color: rgba(177, 7, 7, 0.63);
+}
+
 
 
 

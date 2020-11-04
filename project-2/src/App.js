@@ -21,7 +21,7 @@ function App() {
         <Navbar />
         <Select globalCovidData={globalCovidData} updateCountry={updateCountry} country={country}/>
         <SummaryView globalCovidData={globalCovidData} country={country} />
-        <Visualization/>
+        <Visualization globalCovidData={globalCovidData} country={country} />
       </div>
     </React.Fragment>
   );
