@@ -11,13 +11,13 @@ import './App.css';
 
 function App() {
   let[globalCovidData, setGlobalCovidData] = useState({});
-  console.log(globalCovidData,"in app component");
+  // console.log(globalCovidData.Countries,"in app component");
   return (
     <React.Fragment>
       <div className='main_div'>
         <CovidData setGlobalCovidData={setGlobalCovidData} />
         <Navbar />
-        <Select />
+        <Select globalCovidData={globalCovidData}/>
         <SummaryView />
         {/* <Visualization/> */}
       </div>
