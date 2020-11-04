@@ -31,13 +31,13 @@ const useStyles = makeStyles((theme) => ({
 export default function Summary(props) {
     const classes = useStyles();
 
-    var Confirmed = 0, Recovered = 0, Deaths = 0; 
+    var Confirmed = 0, Recovered = 0, Deaths = 0;
 
     if (props.globalCovidData.Countries !== undefined) { // check: Data is valid
         if (props.country === '-1') { //check: World Data
-             Confirmed = props.globalCovidData.Global.TotalConfirmed;
-             Recovered = props.globalCovidData.Global.TotalRecovered;
-             Deaths = props.globalCovidData.Global.TotalDeaths;
+            Confirmed = props.globalCovidData.Global.TotalConfirmed;
+            Recovered = props.globalCovidData.Global.TotalRecovered;
+            Deaths = props.globalCovidData.Global.TotalDeaths;
         } else { //check: Selected Country Data
             Confirmed = props.globalCovidData.Countries[props.country].TotalConfirmed;
             Recovered = props.globalCovidData.Countries[props.country].TotalRecovered;
@@ -56,7 +56,17 @@ export default function Summary(props) {
                     <Paper className={classes.paper}>
                         <div className='confirmed'>
                             <div className='confirmed_numbers'>
-                                <p className='confirmed_numbers_text'>{Confirmed}</p>
+                                {/* <p className='confirmed_numbers_text'>{Confirmed}</p> */}
+                                <div className='confirmed_numbers_text'>
+                                    <AnimatedNumber
+                                        fontStyle={{ fontFamily: "Nunito", fontSize: 50 }}
+                                        animateToNumber={Confirmed}
+                                        includeComma
+                                        config={{ tension: 89, friction: 40 }}
+                                        onStart={() => console.log("onStart")}
+                                        onFinish={() => console.log("onFinish")}
+                                    />
+                                </div>
                             </div>
                             <div className='confirmed_title'><p>Confirmed</p></div>
                         </div>
@@ -66,7 +76,16 @@ export default function Summary(props) {
                     <Paper className={classes.paper}>
                         <div className='recovered'>
                             <div className='recovered_numbers'>
-                                <p className='recovered_numbers_text'>{Recovered}</p>
+                                <div className='recovered_numbers_text'>
+                                    <AnimatedNumber
+                                        fontStyle={{ fontFamily: "Nunito", fontSize: 50 }}
+                                        animateToNumber={Recovered}
+                                        includeComma
+                                        config={{ tension: 89, friction: 40 }}
+                                        onStart={() => console.log("onStart")}
+                                        onFinish={() => console.log("onFinish")}
+                                    />
+                                </div>
                             </div>
                             <div className='recovered_title'><p>Recovered</p></div>
                         </div>
@@ -76,7 +95,16 @@ export default function Summary(props) {
                     <Paper className={classes.paper}>
                         <div className='death'>
                             <div className='death_numbers'>
-                                <p className='death_numbers_text'>{Deaths}</p>
+                                <div className='death_numbers_text'>
+                                    <AnimatedNumber
+                                        fontStyle={{ fontFamily: "Nunito", fontSize: 50 }}
+                                        animateToNumber={Deaths}
+                                        includeComma
+                                        config={{ tension: 89, friction: 40 }}
+                                        onStart={() => console.log("onStart")}
+                                        onFinish={() => console.log("onFinish")}
+                                    />
+                                </div>
                             </div>
                             <div className='death_title'><p>Confirmed</p></div>
                         </div>
