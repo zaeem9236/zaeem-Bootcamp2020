@@ -16,20 +16,21 @@ function Visualization(props) {
             Deaths = props.globalCovidData.Countries[props.country].TotalDeaths;
         }
     }
-
     const data = {
         labels: ['Infected', 'Recovered', 'Death'],
         datasets: [
             {
-                label: 'Bar Graph view',
-                backgroundColor: 'rgba(177, 7, 7, 0.63)',
-                borderColor: 'rgba(255,99,132,1)',
-                borderWidth: 1,
-                hoverBackgroundColor: 'rgba(255,99,132,0.4)',
-                hoverBorderColor: 'rgba(255,99,132,1)',
-                data: [Confirmed, Recovered, Deaths]
+                
+                label: ['Covid Data'],
+                backgroundColor: ["rgba(177, 7, 7, 0.2)", "rgba(13, 177, 7, 0.2)", "rgba(43, 44, 43, 0.2)"],
+                borderColor: ["rgba(177, 7, 7, 0.3)", "rgba(13, 177, 7, 0.3)", "rgba(43, 44, 43, 0.3)"],
+                borderWidth: 2,
+                hoverBackgroundColor: ["rgba(177, 7, 7, 0.4)", "rgba(13, 177, 7, 0.4)", "rgba(43, 44, 43, 0.4)"],
+                hoverBorderColor: ["rgba(177, 7, 7, 0.5)", "rgba(13, 177, 7, 0.5)", "rgba(43, 44, 43, 0.5)"],
+                data: [Confirmed, Recovered, Deaths],
             },
-        ]
+        ],
+        
     };
 
     return (
