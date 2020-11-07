@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Select from './components/Select';
 import SummaryView from './components/SummaryView';
 import Visualization from './components/Visualization';
+import Footer from './components/Footer';
 import './App.css';
 
 
@@ -22,6 +23,7 @@ function App() {
         <Select globalCovidData={globalCovidData} updateCountry={updateCountry} country={country}/>
         <SummaryView globalCovidData={globalCovidData} country={country} />
         <Visualization globalCovidData={globalCovidData} country={country} />
+        <Footer />
       </div>
     </React.Fragment>
   );
