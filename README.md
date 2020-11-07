@@ -18,6 +18,9 @@
 * ##  <a href="http://zaeem_project-1.surge.sh/">Project 1 - Expense Tracker App</a>
 <hr />
 
+* ##  <a href="http://zaeem_project-2.surge.sh/">Project 2 - Covid-19 Tracker App</a>
+<hr />
+
 
 
 
