@@ -15,7 +15,7 @@ function fetchBusinesses() {
         
           fetchBusinesses()
         
-    },[]);
+    },[fetchBusinesses]);
 
 
     return (
