@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 
 
 function CovidData(props) {
-//   let set_GlobalCovidData = props.setGlobalCovidData();
-    
+  let set_GlobalCovidData = props.setGlobalCovidData;
+    // console.log(set_GlobalCovidData,"zaheem")
 
 
     useEffect(() => {
@@ -12,10 +12,10 @@ function CovidData(props) {
           fetchBusinesses()
 
           function fetchBusinesses() {
-            fetch('https://api.covid19api.com/summary')
-            .then(response => response.json())
-            .then(json => props.setGlobalCovidData(json))
-          }
+    fetch('https://api.covid19api.com/summary')
+    .then(response => response.json())
+    .then(json => set_GlobalCovidData(json))
+  }
         
     },[]);
 
