@@ -17,7 +17,7 @@ function CovidData(props) {
     .then(json => set_GlobalCovidData(json))
   }
         
-    },[]);
+    },[set_GlobalCovidData]);
 
 
     return (
