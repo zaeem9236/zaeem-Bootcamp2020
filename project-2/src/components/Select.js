@@ -27,7 +27,7 @@ export default function Selects(props) {
          if (props.country === '-1'){
              var countryName = 'Global'; 
          }else{
-             var countryName = props.globalCovidData.Countries[props.country].Country;
+              countryName = props.globalCovidData.Countries[props.country].Country;
          }
     }
 
