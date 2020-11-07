@@ -78,9 +78,7 @@ export default function SearchAppBar() {
           <Typography className={classes.title} variant="h6" noWrap>
             Covid-19 Tracker
           </Typography>
-          <Typography>
-          <span>Last updated: 0 Nov 2020</span>
-          </Typography>
+          
           {/* <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />

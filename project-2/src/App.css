@@ -32,7 +32,7 @@
 
 /* Confirmed tab */
 .confirmed_numbers{
-    background-color: rgb(216, 163, 163);
+    background-color: rgba(207, 24, 24, 0.376);
     padding: 40px 0px;
     border-radius: 1px;
 
@@ -46,7 +46,7 @@
 }
 
 .confirmed_title{
-    background-color: rgba(255, 0, 0, 0.657);
+    background-color: rgba(179, 110, 105, 0.274);
     padding: 10px 0;
     border-radius: 1px;
 
@@ -62,7 +62,7 @@
 
 /* Recovered tab */
 .recovered_numbers{
-    background-color: rgb(22, 73, 182);
+    background-color: rgba(22, 73, 182, 0.335);
     padding: 40px 0px;
     border-radius: 1px;
 
@@ -76,7 +76,7 @@
 }
 
 .recovered_title{
-    background-color: rgba(16, 29, 214, 0.459);
+    background-color: rgba(16, 29, 214, 0.445);
     padding: 10px 0;
     border-radius: 1px;
 
@@ -92,7 +92,7 @@
 
 /* Death tab */
 .death_numbers{
-    background-color: rgb(81, 82, 83);
+    background-color: rgba(81, 82, 83, 0.644);
     padding: 40px 0px;
     border-radius: 1px;
 
@@ -106,7 +106,7 @@
 }
 
 .death_title{
-    background-color: rgba(103, 105, 107, 0.103);
+    background-color: rgba(85, 88, 90, 0.459);
     padding: 10px 0;
     border-radius: 1px;
 

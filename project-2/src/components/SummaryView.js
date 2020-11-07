@@ -106,7 +106,7 @@ export default function Summary(props) {
                                     />
                                 </div>
                             </div>
-                            <div className='death_title'><p>Confirmed</p></div>
+                            <div className='death_title'><p>Deaths</p></div>
                         </div>
                     </Paper>
                 </Grid>
