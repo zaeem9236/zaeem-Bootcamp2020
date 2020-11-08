@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { secretName } from './CompX';
+import {globalData} from './CentralisedData';
 
 function CompC(){
-    let secretNameC = useContext(secretName);
+    let value = useContext(globalData);
     return(
         <React.Fragment>
-            <h2>this is C component, and secret value I have is :{secretNameC}</h2>
+            <h2>this is C component, and secret value I have is :{value}</h2>
         </React.Fragment>
     );
 }

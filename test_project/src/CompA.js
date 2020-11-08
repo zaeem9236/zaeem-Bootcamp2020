@@ -1,14 +1,11 @@
 import React, { useContext } from 'react';
-import CompB from './CompB';
-import {secretName} from './CompX';
+import {globalData} from './CentralisedData';
 
 function CompA(){
-    let secretNameA = useContext(secretName);
+    const value = useContext(globalData);
     return(
         <React.Fragment>
-            <CompB/>
-            <h2>this is A component, and secret value I have is :{secretNameA}</h2>
-
+            <h2>this is A component, and secret value I have is :{value}</h2>
         </React.Fragment>
     );
 }
