@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { secretNumber } from './App';
+import { secretName } from './CompX';
 
 function CompC(){
-    let f = useContext(secretNumber);
+    let secretNameC = useContext(secretName);
     return(
         <React.Fragment>
-            <h2>this is C component, and secret value I have is {f}</h2>
+            <h2>this is C component, and secret value I have is :{secretNameC}</h2>
         </React.Fragment>
     );
 }

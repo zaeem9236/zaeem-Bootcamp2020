@@ -1,8 +1,7 @@
-import React, { createContext } from 'react';
+import React from 'react';
 import CompA from './CompA';
 import './App.css';
 
-const secretNumber = createContext('6549');
 
 function App() {
 
@@ -14,4 +13,3 @@ function App() {
   
 }
 export default App;
-export { secretNumber };
