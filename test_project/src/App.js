@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { createContext } from 'react';
+import CompA from './CompA';
 import './App.css';
 
+const secretNumber = createContext('6549');
 
 function App() {
 
   return(
     <React.Fragment>
-      <h1>context testing123</h1>
+      <CompA/>
     </React.Fragment>
   );
   
 }
 export default App;
+export { secretNumber };
