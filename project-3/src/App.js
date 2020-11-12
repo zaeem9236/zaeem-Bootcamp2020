@@ -11,8 +11,8 @@ function App() {
   // console.log(value);
   return (
     <React.Fragment>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routing />
       </BrowserRouter>
     </React.Fragment>

@@ -7,6 +7,9 @@ import InputBase from '@material-ui/core/InputBase';
 import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import { Link } from 'react-router-dom';
+import { NoEncryption } from '@material-ui/icons';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -81,11 +84,11 @@ export default function SearchAppBar() {
                     <Typography className={classes.title} variant="h6" noWrap>
                         Material-UI
           </Typography>
-                   <Typography>
-                       <button className='home_button'>Home</button>
-                       <button className='products_button'>Products</button>
-                       <button className='cart_button'>Cart</button>
-                   </Typography>
+                    <Typography>
+                        <Link to="/"><button className='home_button'>Home</button></Link>
+                        <Link to="/products"><button className='products_button'>Products</button></Link>
+                        <Link to="/cart"><button className='cart_button'>Cart</button></Link>
+                    </Typography>
                 </Toolbar>
             </AppBar>
         </div>

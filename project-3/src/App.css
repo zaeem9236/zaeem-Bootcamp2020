@@ -6,6 +6,16 @@
   box-sizing: border-box;
 }
 
+.home_page{
+  background-image: url("./Images/background.jpg");
+  height: 735px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-attachment: fixed;
+}
+
+
 .home_button{
   background-color: transparent;
   outline: none;

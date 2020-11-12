@@ -1,17 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import CompA from './CompA';
-import CompB from './CompB';
-import CompC from './CompC';
+import Home from './Home';
+import Products from './Products';
+import SingleProductView from './SingleProductView';
+import Cart from './Cart';
 
 
 function Routing() {
     return (
         <React.Fragment>
             <Switch>
-                <Route exact path='/' component={CompA} />
-                <Route exact path='/compb/:id' component={CompB} />
-                <Route exact path='/compc' component={CompC} />
+                <Route exact path='/' component={Home} />
+                <Route exact path='/products' component={Products} />
+                <Route exact path='/products/:id' component={SingleProductView} />
+                <Route exact path='/cart' component={Cart} />
             </Switch>
         </React.Fragment>
     );

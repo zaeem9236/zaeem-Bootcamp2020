@@ -1,11 +1,11 @@
 import React from 'react';
 
-function CompA(){
+function Cart(){
     return(
         <div>
-            <h2>I am comp A</h2>
+            <h2>I am Cart Component</h2>
         </div>
     );
 }
 
-export default CompA;
+export default Cart;
