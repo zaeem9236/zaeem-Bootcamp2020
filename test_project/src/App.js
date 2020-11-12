@@ -1,13 +1,12 @@
-import React, { createContext } from 'react';
-
+import React from 'react';
 import './App.css';
 
 
 function App() {
-
+ 
   return (
     <React.Fragment>
-      <h1>thi and bind testing</h1>
+      <h1>React router testing</h1>
     </React.Fragment>
   );
 
