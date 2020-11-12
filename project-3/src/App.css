@@ -1,5 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+.home_button{
+  background-color: transparent;
+  outline: none;
+  /* border: 1px solid red; */
+  border: none;
+  margin-right: 80px;
+  color: aliceblue;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.products_button{
+  background-color: transparent;
+  outline: none;
+  /* border: 1px solid yellow; */
+  border: none;
+  margin-right: 80px;
+  color: aliceblue;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
+.cart_button{
+  background-color: transparent;
+  outline: none;
+  /* border: 1px solid palegoldenrod; */
+  border: none;
+  margin-right: 10px;
+  color: aliceblue;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
 }
