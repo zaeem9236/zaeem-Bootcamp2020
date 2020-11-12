@@ -4,9 +4,10 @@ import './App.css';
 
 function App() {
   let value = useContext(ShoesData)
+  // console.log(value);
   return (
     <div>
-      <h1>project - 3 {value}</h1>
+      <h1>project - 3</h1>
     </div>
   );
 }
