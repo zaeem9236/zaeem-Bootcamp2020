@@ -1,14 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
 *{
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
+/* ==========================================================================
+                              Home Page
+=============================================================================*/
+
 .home_page{
   background-image: url("./Images/background.jpg");
-  height: 735px;
+  height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; 
@@ -17,26 +21,94 @@
 }
 
 
+.welcome_message{
+  background-color:transparent;
+  font-family: 'Bowlby One SC', cursive;
+  font-size: 50px;
+  padding-top: 180px;
+  color:rgb(119, 126, 119);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button_div{
+  margin-top: 20px ;
+  display:flex;
+  justify-content: center;
+}
+.explore_button{
+  background: none;
+  outline: none;
+  border: 3px solid rgba(195, 184, 25, 0.397);
+  /* color:rgb(119, 126, 119); */
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 3px;
+  font-size: 19px;
+  font-weight: 800;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgba(195, 184, 25, 0.596);
+  padding: 15px 30px;
+  transition-duration: 0.4s ;
+}
+.explore_button:hover{
+  background-color: rgba(189, 186, 9, 0.192);
+  border: 5px solid rgba(195, 184, 25, 1);
+  font-size: 22px;
+  transition-duration: 0.4s ;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+                              Navbar
+=============================================================================*/
+.typography{
+  margin-right: 80px !important;
+}
+
 .home_button{
   background-color: transparent;
   outline: none;
   /* border: 1px solid red; */
   border: none;
-  margin-right: 80px;
-  color: aliceblue;
-  font-family: 'Quicksand', sans-serif;
+  /* margin-right: 80px; */
+  color: rgba(17, 199, 47, 0.918);
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 1px;
   font-size: 20px;
+  transition-duration: 0.3s;
 }
+.home_button:hover{
+  color:rgb(119, 126, 119);
+  transition-duration: 0.3s;
+}
+
+
 
 .products_button{
   background-color: transparent;
   outline: none;
   /* border: 1px solid yellow; */
   border: none;
-  margin-right: 80px;
-  color: aliceblue;
-  font-family: 'Quicksand', sans-serif;
+  /* margin-right: 80px; */
+  color: rgba(17, 199, 47, 0.918);
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 1px;
   font-size: 20px;
+  transition-duration: 0.3s;
+}
+.products_button:hover{
+  color:rgb(119, 126, 119);
+  transition-duration: 0.3s;
 }
 
 .cart_button{
@@ -45,7 +117,13 @@
   /* border: 1px solid palegoldenrod; */
   border: none;
   margin-right: 10px;
-  color: aliceblue;
-  font-family: 'Quicksand', sans-serif;
+  color: rgba(17, 199, 47, 0.918);
+  font-family: 'Bowlby One SC', cursive;
+  letter-spacing: 1px;
   font-size: 20px;
+  transition-duration: 0.3s;
+}
+.cart_button:hover{
+  color:rgb(119, 126, 119);
+  transition-duration: 0.3s;
 }

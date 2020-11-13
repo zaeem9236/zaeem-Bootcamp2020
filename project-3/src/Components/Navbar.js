@@ -8,6 +8,7 @@ import { fade, makeStyles } from '@material-ui/core/styles';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import { Link } from 'react-router-dom';
+import {useLocation} from 'react-router-dom'
 import { NoEncryption } from '@material-ui/icons';
 
 
@@ -64,16 +65,36 @@ const useStyles = makeStyles((theme) => ({
             },
         },
     },
+    custom:{
+        display: 'none'
+    }
 }));
+
+
 
 export default function SearchAppBar() {
     const classes = useStyles();
 
+    const location = useLocation();
+    console.log(location.pathname ==='/', 'yaha pr hoon')
+    if( location.pathname ==='/'){
+        var appBarStyle={
+            backgroundColor: 'transparent',
+            boxShadow: 'none',
+        }
+    }else{
+        var appBarStyle = {
+            display: 'none',
+        };
+    }
+        
     return (
         <div className={classes.root}>
-            <AppBar position="static">
+            <AppBar style={appBarStyle} position="fixed">
                 <Toolbar>
                     <IconButton
+                              style={{color: 'Red'}}
+
                         edge="start"
                         className={classes.menuButton}
                         color="inherit"
@@ -84,9 +105,15 @@ export default function SearchAppBar() {
                     <Typography className={classes.title} variant="h6" noWrap>
                         Material-UI
           </Typography>
-                    <Typography>
+                    <Typography className='typography'>
                         <Link to="/"><button className='home_button'>Home</button></Link>
+                    </Typography>
+
+                    <Typography className='typography'>
                         <Link to="/products"><button className='products_button'>Products</button></Link>
+                    </Typography>
+
+                    <Typography className='typography'>
                         <Link to="/cart"><button className='cart_button'>Cart</button></Link>
                     </Typography>
                 </Toolbar>
