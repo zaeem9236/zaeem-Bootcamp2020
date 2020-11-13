@@ -22,6 +22,24 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
+// Material ui Card Imports
+
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+import Button from '@material-ui/core/Button';
+
+const useStylesCard = makeStyles({
+    root: {
+      maxWidth: 345,
+    },
+    media: {
+      height: 140,
+    },
+  });
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -58,6 +76,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ResponsiveDrawer(props) {
+    const cardclasses = useStylesCard();
+
     const { window } = props;
     const classes = useStyles();
     const theme = useTheme();
@@ -157,12 +177,42 @@ function ResponsiveDrawer(props) {
             </nav>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                
-                {/* {Countries.map(function (val, index) {
-                        //   console.log(index +' : '+val.Country)
-                        return (<option  value={index} key={index}>{val.Country}</option>);
 
-                    })} */}
+
+
+
+                {products.map(function (val, index) {
+                        //   console.log(index +' : '+val.Country)
+                        return (
+                            <Card className={cardclasses.root} class='card_to_flex'>
+      <CardActionArea>
+        <CardMedia
+          className={cardclasses.media}
+          image="/static/images/cards/contemplative-reptile.jpg"
+          title="Contemplative Reptile"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="h2">
+            Lizard
+          </Typography>
+          <Typography variant="body2" color="textSecondary" component="p">
+            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
+            across all continents except Antarctica
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions>
+        <Button size="small" color="primary">
+          Share
+        </Button>
+        <Button size="small" color="primary">
+          Learn More
+        </Button>
+      </CardActions>
+    </Card>
+                        );
+
+                    })}
             </main>
         </div>
     );
