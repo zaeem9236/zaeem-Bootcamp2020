@@ -134,3 +134,16 @@
   justify-content: flex-start;
 
 }
+
+.single_product_view{
+  display: flex;
+}
+
+.single_product_picture{
+  width: 500px
+  
+}
+
+/*.single_product_details{
+
+} */
