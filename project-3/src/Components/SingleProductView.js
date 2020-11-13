@@ -8,7 +8,7 @@ function SingleProductView(){
 
     return(
         <div>
-            
+            <p>Single product view</p>
         </div>
     );
 }
