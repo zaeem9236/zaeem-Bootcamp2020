@@ -22,23 +22,9 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 
-// Material ui Card Imports
+import DisplayCard from './DisplayCard';
+import { Card } from '@material-ui/core';
 
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-
-const useStylesCard = makeStyles({
-    root: {
-      maxWidth: 345,
-    },
-    media: {
-      height: 140,
-    },
-  });
 
 const drawerWidth = 240;
 
@@ -76,8 +62,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ResponsiveDrawer(props) {
-    const cardclasses = useStylesCard();
-
     const { window } = props;
     const classes = useStyles();
     const theme = useTheme();
@@ -97,16 +81,8 @@ function ResponsiveDrawer(props) {
 
             <List>
                 {['Home', 'Products', 'Cart'].map((text, index) => (
-                    <Link to={routes[index]} style={{ textDecoration: 'none', color: 'rgba(0,0,0,0.87)' }}>
-                        <ListItem button key={text} onClick={() => {
-                            if (text === 'Home') {
-                                console.log('iya ghar aya')
-                            } else if (text === 'Products') {
-                                console.log('shooping')
-                            } else {
-                                console.log('kharcha')
-                            }
-                        }}>
+                    <Link to={routes[index]} key ={index} style={{ textDecoration: 'none', color: 'rgba(0,0,0,0.87)' }}>
+                        <ListItem button key={text}>
                             <ListItemIcon>
                                 {index === 0 ? <HomeIcon /> : ''}
                                 {index === 1 ? <LocalMallIcon /> : ''}
@@ -177,42 +153,21 @@ function ResponsiveDrawer(props) {
             </nav>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-
-
-
-
-                {products.map(function (val, index) {
-                        //   console.log(index +' : '+val.Country)
+                <div className='display_cards'>
+                {products.map(function (item, index) {
+                        //   console.log(item.name,'gfgf')
                         return (
-                            <Card className={cardclasses.root} class='card_to_flex'>
-      <CardActionArea>
-        <CardMedia
-          className={cardclasses.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
-          title="Contemplative Reptile"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button>
-      </CardActions>
-    </Card>
-                        );
+                        < DisplayCard 
+                        key={index} 
+                        location = {index}
+                        name = {item.name}
+                        price = {item.price}
+                        image = {item.image}
+                        desc = {item.description}
+                        />);
 
                     })}
+                    </div>
             </main>
         </div>
     );

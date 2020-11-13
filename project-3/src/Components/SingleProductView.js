@@ -1,9 +1,14 @@
-import React from 'react';
+import React,{ useContext } from 'react';
+import { useParams } from 'react-router-dom';
+import ShoesData from '../ShoesData';
 
 function SingleProductView(){
+    const { id } = useParams();
+    let products = useContext(ShoesData);
+
     return(
         <div>
-            <h2>I am product abc xyz</h2>
+            
         </div>
     );
 }
