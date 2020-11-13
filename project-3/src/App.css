@@ -137,13 +137,23 @@
 
 .single_product_view{
   display: flex;
+  border: 5px solid red;
+
 }
 
 .single_product_picture{
-  width: 500px
-  
+  border: 5px solid indigo;
+
+}
+.single_product_picture > img{
+  width: 390px;
+  height: 400px;
 }
 
-/*.single_product_details{
-
-} */
+.single_product_details{
+  border: 5px solid green;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

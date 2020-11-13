@@ -25,7 +25,6 @@ import { Link } from 'react-router-dom';
 import DisplayCard from './DisplayCard';
 import { Card } from '@material-ui/core';
 
-import ImageCarousel from './ImageCarousel';
 import {useParams} from 'react-router-dom'; 
 
 
@@ -77,7 +76,6 @@ function ResponsiveDrawer(props) {
     let routes = ['/', '/products', '/cart'];
     var products = useContext(ShoesData);
     let { id } = useParams();
-    console.log(id,'fee wee');  
 
     const drawer = (
         <div>
@@ -160,9 +158,13 @@ function ResponsiveDrawer(props) {
                 <div className={classes.toolbar} />
                 <div className='single_product_view'>
                     <div className='single_product_picture'>
+                      <img src={products[id].image} alt=''></img>
                     </div>
                     <div className='single_product_details'>
-
+                        <h2>{products[id].name}</h2>
+                        <h2>Description</h2>
+                        <p>{products[id].description}</p>
+                        <p>{products[id].price}</p>
                     </div>
                 </div>
 
