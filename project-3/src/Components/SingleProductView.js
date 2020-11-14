@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import React, { useState,createContext,useContext } from 'react';
+import {CartManagement} from '../App';
 import ShoesData from '../ShoesData';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
@@ -20,12 +21,14 @@ import MenuIcon from '@material-ui/icons/Menu';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+
 import { Link } from 'react-router-dom';
 
 import DisplayCard from './DisplayCard';
 import { Card } from '@material-ui/core';
 
-import {useParams} from 'react-router-dom'; 
+import { useParams } from 'react-router-dom';
 
 
 const drawerWidth = 240;
@@ -68,15 +71,20 @@ function ResponsiveDrawer(props) {
     const classes = useStyles();
     const theme = useTheme();
     const [mobileOpen, setMobileOpen] = React.useState(false);
-
+    
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);
     };
-
+    
     let routes = ['/', '/products', '/cart'];
     var products = useContext(ShoesData);
+    var [cart, setCart] = useContext(CartManagement);
+    // console.log(cart,'this 1');
+    // console.log(setCart,'this 2');
+    // let [cartItems, setCartItems] = useState('pehla item');
+    // let cartMangement = createContext([cartItems, setCartItems]);
+    // export { cartMangement };
     let { id } = useParams();
-
     const drawer = (
         <div>
             <div className={classes.toolbar} />
@@ -158,13 +166,20 @@ function ResponsiveDrawer(props) {
                 <div className={classes.toolbar} />
                 <div className='single_product_view'>
                     <div className='single_product_picture'>
-                      <img src={products[id].image} alt=''></img>
+                        <img src={products[id].image} alt=''></img>
                     </div>
                     <div className='single_product_details'>
                         <p className='product_price'>{products[id].price}</p>
                         <h2 className='product_name'>{products[id].name}</h2>
                         <h2 className='product_desc_title'>Description</h2>
                         <p className='product_desc'>{products[id].description}</p>
+                        <Button className='add_to_cart' variant="outlined" color="secondary"
+                        onClick={()=>{
+                           setCart([...cart,id]);
+                           console.log(cart,'after adding');
+                        }} >
+                            Add to Cart
+                        </Button>
                     </div>
                 </div>
 

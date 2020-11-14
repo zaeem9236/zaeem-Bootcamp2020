@@ -37,7 +37,7 @@ export default function DisplayCard(props) {
                         <Typography gutterBottom variant="h5" component="h2">
                             {props.name}
                         </Typography>
-                        <Typography variant="body3" color="textSecondary" component="h1">
+                        <Typography variant="body2" color="textSecondary" component="h1">
                             {props.price}
           </Typography>
                     </CardContent>

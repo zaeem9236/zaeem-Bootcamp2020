@@ -1,4 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartManagement } from '../App';
+import ShoesData from '../ShoesData';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
@@ -20,6 +22,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
+import SimplePaper from './SimplePaper';
 
 const drawerWidth = 240;
 
@@ -57,6 +60,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ResponsiveDrawer(props) {
+    var [cart, setCart] = useContext(CartManagement);
+
     const { window } = props;
     const classes = useStyles();
     const theme = useTheme();
@@ -67,6 +72,8 @@ function ResponsiveDrawer(props) {
     };
 
     let routes = ['/','/products','/cart'];
+    var products = useContext(ShoesData);
+
 
     const drawer = (
         <div>
@@ -75,16 +82,8 @@ function ResponsiveDrawer(props) {
 
             <List>
                 {['Home', 'Products', 'Cart'].map((text, index) => (
-                    <Link to={routes[index]} style={{ textDecoration: 'none', color: 'rgba(0,0,0,0.87)' }}>
-                        <ListItem button key={text} onClick={() => {
-                            if (text === 'Home') {
-                                console.log('iya ghar aya')
-                            } else if (text === 'Products') {
-                                console.log('shooping')
-                            } else {
-                                console.log('kharcha')
-                            }
-                        }}>
+                    <Link to={routes[index]} key={index} style={{ textDecoration: 'none', color: 'rgba(0,0,0,0.87)' }}>
+                        <ListItem button key={text}>
                             <ListItemIcon>
                                 {index === 0 ? <HomeIcon /> : ''}
                                 {index === 1 ? <LocalMallIcon /> : ''}
@@ -155,29 +154,19 @@ function ResponsiveDrawer(props) {
             </nav>
             <main className={classes.content}>
                 <div className={classes.toolbar} />
-                <Typography paragraph>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum
-                    facilisis leo vel. Risus at ultrices mi tempus imperdiet. Semper risus in hendrerit
-                    gravida rutrum quisque non tellus. Convallis convallis tellus id interdum velit laoreet id
-                    donec ultrices. Odio morbi quis commodo odio aenean sed adipiscing. Amet nisl suscipit
-                    adipiscing bibendum est ultricies integer quis. Cursus euismod quis viverra nibh cras.
-                    Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Mauris commodo quis
-                    imperdiet massa tincidunt. Cras tincidunt lobortis feugiat vivamus at augue. At augue eget
-                    arcu dictum varius duis at consectetur lorem. Velit sed ullamcorper morbi tincidunt. Lorem
-                    donec massa sapien faucibus et molestie ac.
-        </Typography>
-                <Typography paragraph>
-                    Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper eget nulla
-                    facilisi etiam dignissim diam. Pulvinar elementum integer enim neque volutpat ac
-                    tincidunt. Ornare suspendisse sed nisi lacus sed viverra tellus. Purus sit amet volutpat
-                    consequat mauris. Elementum eu facilisis sed odio morbi. Euismod lacinia at quis risus sed
-                    vulputate odio. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. In
-                    hendrerit gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem et
-                    tortor. Habitant morbi tristique senectus et. Adipiscing elit duis tristique sollicitudin
-                    nibh sit. Ornare aenean euismod elementum nisi quis eleifend. Commodo viverra maecenas
-                    accumsan lacus vel facilisis. Nulla posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+                       { cart.map(function (item, index){
+                            return(
+                                < SimplePaper 
+                                key={index} 
+                                name = {products[item].name}
+                                price = {products[item].price}
+                                image = {products[item].image}
+                                
+                                />
+                            );
+                        })}
+                    {console.log( cart,'in carts')}
+                        
             </main>
         </div>
     );

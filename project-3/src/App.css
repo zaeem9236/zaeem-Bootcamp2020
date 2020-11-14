@@ -81,7 +81,7 @@
   /* border: 1px solid red; */
   border: none;
   /* margin-right: 80px; */
-  color: rgba(17, 199, 47, 0.918);
+  color: rgba(174, 184, 174, 0.986);
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1px;
   font-size: 20px;
@@ -100,7 +100,7 @@
   /* border: 1px solid yellow; */
   border: none;
   /* margin-right: 80px; */
-  color: rgba(17, 199, 47, 0.918);
+  color: rgba(174, 184, 174, 0.986);
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1px;
   font-size: 20px;
@@ -117,7 +117,7 @@
   /* border: 1px solid palegoldenrod; */
   border: none;
   margin-right: 10px;
-  color: rgba(17, 199, 47, 0.918);
+  color: rgba(174, 184, 174, 0.986);
   font-family: 'Bowlby One SC', cursive;
   letter-spacing: 1px;
   font-size: 20px;
@@ -183,4 +183,26 @@
   margin: 30px 0px;
   /* margin-left: 50px; */
   border-bottom:5px solid rgba(11, 105, 168, 0.726);
+}
+.add_to_cart{
+  margin-top:30px !important;
+}
+
+.cart_paper{
+  width: 40vw !important;
+}
+.cart_paper_content{
+  display: flex;
+  /* border: 1px solid indianred; */
+}
+.cart_paper_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+.cart_paper_image{
+  width: 100px;
 }

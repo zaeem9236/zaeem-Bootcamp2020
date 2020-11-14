@@ -20,6 +20,8 @@ const useStyles = makeStyles((theme) => ({
         marginRight: theme.spacing(2),
     },
     title: {
+        color:'rgb(119, 126, 119)',
+
         flexGrow: 1,
         display: 'none',
         [theme.breakpoints.up('sm')]: {
@@ -76,7 +78,6 @@ export default function SearchAppBar() {
     const classes = useStyles();
 
     const location = useLocation();
-    console.log(location.pathname ==='/', 'yaha pr hoon')
     if( location.pathname ==='/'){
         var appBarStyle={
             backgroundColor: 'transparent',
@@ -100,10 +101,10 @@ export default function SearchAppBar() {
                         color="inherit"
                         aria-label="open drawer"
                     >
-                        <MenuIcon />
+                        {/* <MenuIcon /> */}
                     </IconButton>
                     <Typography className={classes.title} variant="h6" noWrap>
-                        Material-UI
+                        Joo-tay
           </Typography>
                     <Typography className='typography'>
                         <Link to="/"><button className='home_button'>Home</button></Link>
