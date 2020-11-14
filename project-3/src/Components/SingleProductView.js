@@ -161,10 +161,10 @@ function ResponsiveDrawer(props) {
                       <img src={products[id].image} alt=''></img>
                     </div>
                     <div className='single_product_details'>
-                        <h2>{products[id].name}</h2>
-                        <h2>Description</h2>
-                        <p>{products[id].description}</p>
-                        <p>{products[id].price}</p>
+                        <p className='product_price'>{products[id].price}</p>
+                        <h2 className='product_name'>{products[id].name}</h2>
+                        <h2 className='product_desc_title'>Description</h2>
+                        <p className='product_desc'>{products[id].description}</p>
                     </div>
                 </div>
 
