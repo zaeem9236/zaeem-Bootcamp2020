@@ -206,3 +206,106 @@
 .cart_paper_image{
   width: 100px;
 }
+
+
+
+
+
+
+
+/* ==========================================================================
+                            Media Query
+=============================================================================*/
+
+
+/* -------------------- desktop and laptops ------------------------------*/
+@media (min-width: 1024px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- Tablets and ipads ------------------------------*/
+@media (min-width: 769px) and (max-width: 1023px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------- Mobile Phones ------------------------------*/
+@media (min-width: 768px){
+
+}
+
+@media screen and (max-width:468px){
+  .home_page{
+    background-image: url("./Images/background.jpg");
+    height: 100vh;
+  }
+
+  .welcome_message{
+    font-size: 7.3vw;
+    transform: scaleY(1.5);
+    color:rgb(144, 156, 144);
+  }
+  
+  .button_div{
+    margin-top: 160px ;
+    display:flex;
+    justify-content: center;
+  }
+
+  .explore_button{
+    border: 3px solid rgba(195, 184, 25, 0.397);
+    letter-spacing: 3px;
+    font-size: 26px;
+    font-weight: 800;
+    border-radius: 5px;
+    padding: 25px 40px;
+  }
+
+  .typography{
+    margin-top: 35px !important;
+    margin-right: 60px !important;
+  }
+
+ 
+
+}
+
+
+
+
+
+
+
