@@ -448,7 +448,8 @@
   }
 
   .welcome_message{
-    font-size: 7.3vw;
+    padding-top: 50vh;
+    font-size: 4.3vw;
     transform: scaleY(1.5);
     color:rgb(144, 156, 144);
   }
@@ -470,7 +471,7 @@
 
   .typography{
     margin-top: 35px !important;
-    margin-right: 11% !important;
+    margin-right: 8% !important;
   }
 
     /* ------------------ products page ------------------ */
@@ -484,22 +485,22 @@
     .single_product_view{
       display: flex;
       flex-direction: column;
-      align-items: center;  
+      align-items: flex-start;  
     }
 
     .single_product_picture{
-      width: 80vw;
+      width: 60vw;
       display: flex;
       justify-content: center;
     }
     
     .single_product_picture > img{
-      width: 70vw;
+      width: 50vw;
       height: auto;
     }
     
     .single_product_details{
-      width: 80vw;
+      width: 60vw;
     }
     
     .product_name{
@@ -526,7 +527,7 @@
     /* ------------------ Shopping cart page ------------------ */
     
     .cart_paper{
-      width: 80vw !important;
+      width: 60vw !important;
     }
 }
 
@@ -549,11 +550,12 @@
   .home_page{
     background-image: url("./Images/background.jpg");
     height: 100vh;
-    opacity:0.2;
+    /* opacity:0.2; */
   }
 
   .welcome_message{
-    font-size: 7.3vw;
+    padding-top: 50vh;
+    font-size: 4.3vw;
     transform: scaleY(1.5);
     color:rgb(144, 156, 144);
   }
@@ -575,7 +577,7 @@
 
   .typography{
     margin-top: 35px !important;
-    margin-right: 11% !important;
+    margin-right: 8% !important;
   }
 
     /* ------------------ products page ------------------ */
@@ -589,22 +591,22 @@
     .single_product_view{
       display: flex;
       flex-direction: column;
-      align-items: center;  
+      align-items: flex-start;  
     }
 
     .single_product_picture{
-      width: 80vw;
+      width: 60vw;
       display: flex;
       justify-content: center;
     }
     
     .single_product_picture > img{
-      width: 70vw;
+      width: 50vw;
       height: auto;
     }
     
     .single_product_details{
-      width: 80vw;
+      width: 60vw;
     }
     
     .product_name{
@@ -631,7 +633,7 @@
     /* ------------------ Shopping cart page ------------------ */
     
     .cart_paper{
-      width: 80vw !important;
+      width: 60vw !important;
     }
 }
 
@@ -654,7 +656,7 @@
   .home_page{
     background-image: url("./Images/background.jpg");
     height: 100vh;
-    /* opacity:0.2; */
+    opacity:0.2;
   }
 
   .welcome_message{
