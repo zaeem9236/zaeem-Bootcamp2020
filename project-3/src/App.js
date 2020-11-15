@@ -3,7 +3,6 @@ import { BrowserRouter } from 'react-router-dom';
 import Routing from './Components/Routing';
 import Navbar from './Components/Navbar';
 
-import ShoesData from './ShoesData';
 import './App.css';
 
 const CartManagement = createContext('');
