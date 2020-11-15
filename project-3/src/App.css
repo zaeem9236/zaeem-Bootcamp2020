@@ -254,7 +254,7 @@
   .home_page{
     background-image: url("./Images/background.jpg");
     height: 100vh;
-    opacity: 0.2;
+    /* opacity: 0.2; */
   }
 
   .welcome_message{
