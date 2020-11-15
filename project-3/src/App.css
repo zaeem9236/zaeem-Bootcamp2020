@@ -339,7 +339,7 @@
   .home_page{
     background-image: url("./Images/background.jpg");
     height: 100vh;
-    opacity:0.2;
+    /* opacity:0.2; */
   }
 
   .welcome_message{
@@ -448,7 +448,7 @@
   }
 
   .welcome_message{
-    padding-top: 50vh;
+    padding-top: 28vh;
     font-size: 4.3vw;
     transform: scaleY(1.5);
     color:rgb(144, 156, 144);
@@ -550,7 +550,7 @@
   .home_page{
     background-image: url("./Images/background.jpg");
     height: 100vh;
-    opacity:0.2;
+    /* opacity:0.2; */
   }
 
   .welcome_message{
@@ -656,7 +656,7 @@
   .home_page{
     background-image: url("./Images/background.jpg");
     height: 100vh;
-    opacity:0.2;
+    /* opacity:0.2; */
   }
 
   .welcome_message{
