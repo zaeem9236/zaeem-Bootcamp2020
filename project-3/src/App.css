@@ -554,7 +554,7 @@
   }
 
   .welcome_message{
-    padding-top: 50vh;
+    padding-top: 30vh;
     font-size: 4.3vw;
     transform: scaleY(1.5);
     color:rgb(144, 156, 144);
