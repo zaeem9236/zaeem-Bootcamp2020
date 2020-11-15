@@ -80,7 +80,7 @@ export default function SearchAppBar() {
             boxShadow: 'none',
         }
     }else{
-        var appBarStyle = {
+         appBarStyle = {
             display: 'none',
         };
     }

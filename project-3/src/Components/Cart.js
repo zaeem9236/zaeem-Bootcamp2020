@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function ResponsiveDrawer(props) {
-    var [cart, setCart] = useContext(CartManagement);
+    var [cart] = useContext(CartManagement);
 
     const { window } = props;
     const classes = useStyles();

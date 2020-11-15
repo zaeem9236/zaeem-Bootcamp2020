@@ -15,7 +15,7 @@ const StyledBadge = withStyles((theme) => ({
 }))(Badge);
 
 export default function CartBadge() {
-    var [cart, setCart] = useContext(CartManagement);
+    var [cart] = useContext(CartManagement);
 
   return (
     <IconButton aria-label="cart" >
