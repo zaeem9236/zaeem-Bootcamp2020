@@ -76,7 +76,6 @@ function ResponsiveDrawer(props) {
     const drawer = (
         
         <div>
-        {console.log('i am caaaaart')};
             <div className={classes.toolbar} />
             <Divider />
 
@@ -170,7 +169,7 @@ function ResponsiveDrawer(props) {
                                 />
                             );
                         })}
-                    {console.log( cart,'in carts')}
+                    
                         
             </main>
         </div>

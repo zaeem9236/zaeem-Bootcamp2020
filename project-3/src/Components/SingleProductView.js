@@ -76,11 +76,7 @@ function ResponsiveDrawer(props) {
     let routes = ['/', '/products', '/cart'];
     var products = useContext(ShoesData);
     var [cart, setCart] = useContext(CartManagement);
-    // console.log(cart,'this 1');
-    // console.log(setCart,'this 2');
-    // let [cartItems, setCartItems] = useState('pehla item');
-    // let cartMangement = createContext([cartItems, setCartItems]);
-    // export { cartMangement };
+   
     let { id } = useParams();
     const drawer = (
         <div>
@@ -177,7 +173,7 @@ function ResponsiveDrawer(props) {
                         <Button className='add_to_cart' variant="outlined" color="secondary"
                         onClick={()=>{
                            setCart([...cart,id]);
-                           console.log(cart,'after adding');
+                           
                         }} >
                             Add to Cart
                         </Button>

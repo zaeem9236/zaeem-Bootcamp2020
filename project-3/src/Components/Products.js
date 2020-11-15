@@ -157,7 +157,7 @@ function ResponsiveDrawer(props) {
                 <div className={classes.toolbar} />
                 <div className='display_cards'>
                 {products.map(function (item, index) {
-                        //   console.log(item.name,'gfgf')
+                        
                         return (
                         < DisplayCard 
                         key={index} 

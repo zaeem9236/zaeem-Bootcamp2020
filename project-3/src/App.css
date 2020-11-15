@@ -266,7 +266,7 @@
     /* ------------------ products page ------------------ */
 
     .display_cards{
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     /* ------------------ Single product view page ------------------ */
@@ -371,7 +371,7 @@
     /* ------------------ products page ------------------ */
 
     .display_cards{
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     /* ------------------ Single product view page ------------------ */
@@ -477,7 +477,7 @@
     /* ------------------ products page ------------------ */
 
     .display_cards{
-      justify-content: center;
+      justify-content: flex-start;
     }
 
     /* ------------------ Single product view page ------------------ */

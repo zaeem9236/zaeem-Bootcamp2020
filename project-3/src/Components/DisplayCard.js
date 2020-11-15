@@ -13,6 +13,8 @@ const useStyles = makeStyles({
     root: {
         minWidth: 300,
         maxWidth: 300,
+        minHeight: 350,
+        maxHeight: 400,
         margin: '10px 6px'
     },
     media: {
@@ -23,7 +25,6 @@ const useStyles = makeStyles({
 
 export default function DisplayCard(props) {
     const classes = useStyles();
-    console.log(props, 'propr')
     return (
         <Link to={`/products/${props.location}`} style={{textDecoration: 'none'}}  >
             <Card className={classes.root}>
