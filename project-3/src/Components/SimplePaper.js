@@ -2,6 +2,7 @@ import React, {useContext } from 'react';
 import { CartManagement } from '../App';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
+import DeleteIcon from '@material-ui/icons/Delete';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -29,14 +30,14 @@ export default function SimplePaper(props) {
           <div className='cart_paper_text'>
             <div>{props.name}</div>
             <div>{props.price}</div>
-            <div><button onClick={()=>{
+            <div style={{  color: 'rgb(200, 7, 7)', cursor: 'pointer'}}onClick={()=>{
               cart.splice([props.uid],1);
               let dummy_array =[];
               for(let i=0; i<cart.length; i++){
                 dummy_array.push(parseInt(cart[i])); 
               }
               setCart(dummy_array);
-            }}>del</button></div>
+            }}> <DeleteIcon /></div>
           </div>
         </div>
       </Paper>
