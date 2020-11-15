@@ -234,17 +234,17 @@
   .home_page{
     background-image: url("./Images/background.jpg");
     height: 100vh;
-    opacity:0.2;
+    /* opacity:0.2; */
   }
 
   .welcome_message{
-    font-size: 7.3vw;
-    transform: scaleY(1.5);
+    font-size: 5.0vw;
+    transform: scaleY(1.1);
     color:rgb(144, 156, 144);
   }
   
   .button_div{
-    margin-top: 160px ;
+    margin-top: 110px ;
     display:flex;
     justify-content: center;
   }
