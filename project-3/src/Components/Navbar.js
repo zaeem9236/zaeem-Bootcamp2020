@@ -104,7 +104,7 @@ export default function SearchAppBar() {
                         {/* <MenuIcon /> */}
                     </IconButton>
                     <Typography className={classes.title} variant="h6" noWrap>
-                        Joo-tay
+                        Joo-Tay
           </Typography>
                     <Typography className='typography'>
                         <Link to="/"><button className='home_button'>Home</button></Link>

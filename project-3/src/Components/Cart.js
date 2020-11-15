@@ -23,7 +23,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import SimplePaper from './SimplePaper';
-
+import CartBadge from './CartBadge';
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -76,7 +76,9 @@ function ResponsiveDrawer(props) {
 
 
     const drawer = (
+        
         <div>
+        {console.log('i am caaaaart')};
             <div className={classes.toolbar} />
             <Divider />
 
@@ -118,6 +120,10 @@ function ResponsiveDrawer(props) {
                     <Typography variant="h6" noWrap 
                     style={{  margin: 'auto' }}>
                         Shopping Cart
+          </Typography>
+          <Typography variant="h6" noWrap 
+                    style={{  marginRight: '5px' }}>
+                        <CartBadge />
           </Typography>
                 </Toolbar>
             </AppBar>
@@ -161,6 +167,7 @@ function ResponsiveDrawer(props) {
                                 name = {products[item].name}
                                 price = {products[item].price}
                                 image = {products[item].image}
+                                uid= {index}
                                 
                                 />
                             );

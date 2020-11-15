@@ -21,6 +21,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
+import CartBadge from './CartBadge';
 
 import DisplayCard from './DisplayCard';
 import { Card } from '@material-ui/core';
@@ -117,6 +118,10 @@ function ResponsiveDrawer(props) {
                     <Typography variant="h6" noWrap 
                     style={{  margin: 'auto' }}>
                         Shoes
+          </Typography>
+          <Typography variant="h6" noWrap 
+                    style={{  marginRight: '5px' }}>
+                        <CartBadge />
           </Typography>
                 </Toolbar>
             </AppBar>
