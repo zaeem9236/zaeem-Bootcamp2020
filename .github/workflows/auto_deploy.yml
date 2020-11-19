@@ -33,7 +33,7 @@ jobs:
 
     
     - name: Creating build
-      run: cd project-4a && npm install react-scripts -g --silent && yarn add react && yarn build
+      run: cd project-4a && npm install react-scripts -g --silent && yarn add react && CI=false yarn build
     
     - name: installing surge  
       run: npm install --global surge
