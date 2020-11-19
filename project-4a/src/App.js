@@ -110,7 +110,7 @@ const App = () => {
 			redQueen_alice.getAnimation().playbackRate = playbackrateRQ;
 			adjustBackgroundPlayback();
 		});
-	});
+	},[]);
 
 
 	return (
