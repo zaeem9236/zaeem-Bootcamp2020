@@ -13,22 +13,21 @@ function isInViewport(element) {
 
 
 function SecondPage() {
-    const { ref, animate } = useWebAnimations();
-        console.log(ref,'inside reference')
-    var animation_1_keyframes = {
-         transform: ["translateX(500px)"], // Move by 500px
+    const illustration1_animation = useWebAnimations();
+    var illustration_animation_keyframes = {
+        transform: ["translateY(50px)"], 
         };
 
-    var animation_1_timings = {
-            delay: 500, // Start with a 500ms delay
-            duration: 1000, // Run for 1000ms
+    var illustration_animation_timings = {
+            // delay: 0, // Start with a 500ms delay
+            duration: 1600, // Run for 1000ms
             iterations: Infinity, // Repeat once
             direction: "alternate", // Run the animation forwards and then backwards
-            easing: "ease-in-out", // Use a fancy timing function
+            // easing: "ease-in-out", // Use a fancy timing function
     }
 
     useEffect(() => {
-        animate({ keyframes: animation_1_keyframes, timing: animation_1_timings,});
+        illustration1_animation.animate({ keyframes: illustration_animation_keyframes, timing: illustration_animation_timings,});
     }, []);
     let [scrollY, setScrollY] = useState(0);
 
@@ -49,12 +48,12 @@ function SecondPage() {
                 <div className='second_page_description'>
                     {/* <p>{window.scrollY}</p> */}
                     {/* {console.log(isInViewport(2),'viewport')} */}
-                    <p ref={ref} className='second_page_desc_heading'>Heading</p>
+                    <p  className='second_page_desc_heading'>Heading</p>
                     <p  className='second_page_desc_text'>simply put, IoT is about connecting machines or, as we refer to them, 'things' that were previously 'dumb objects', (think everything from your toaster to a security camera), to the internet in order to transmit the data they collect, monitor them and enable them to 'talk to each other'.</p>
                 </div>
 
                 <div className='second_page_illustration'>
-                    <img className='iot_pic' src={iot_pic} alt='' />
+                    <img ref={illustration1_animation.ref} className='second_iot_pic' src={iot_pic} alt='' />
                 </div>
             </div>
         </React.Fragment>
