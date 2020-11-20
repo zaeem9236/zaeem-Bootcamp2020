@@ -382,15 +382,15 @@
   /* background-position: -300px 0px; */
   
     display: flex;
-    padding-left: 20vw;
+    /* padding-left: 20vw; */
     align-items: center;
   }
   
   
   .home_page_heading{
     transform: translate(0px, -50px);
-    color: aliceblue;
-    /* color: rgb(250, 0, 0); */
+    /* color: aliceblue; */
+    color: rgb(250, 0, 0);
     opacity: 0;
     letter-spacing: 1px;
   }
@@ -404,11 +404,12 @@
   }
   
   .second_page_description{
-    width:100vw;
+    width:90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 500px;
+    margin: 0 auto;
   }
   
   .second_page_desc_heading{
@@ -425,11 +426,12 @@
   
   .second_page_illustration{
     margin-top: -80px;
-    width:100vw;
+    width:90vw;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 500px;
+    margin: 0 auto;
   }
   
   .second_iot_pic{
@@ -447,12 +449,13 @@
   }
   
   .third_page_description{
-    width:100vw;
+    width:90vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 500px;
+    margin: 0 auto;
   }
   
   .third_page_desc_heading{
@@ -468,11 +471,12 @@
   }
   
   .third_page_illustration{
-    width:100vw;
+    width:90vw;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 500px;
+    margin: 0 auto;
   }
   
   .third_iot_pic{
@@ -490,12 +494,13 @@
   }
   
   .fourth_page_description{
-    width:100vw;
+    width:90vw;
     /* border: 5px solid rgb(224, 4, 4); */
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 500px;
+    margin: 0 auto;
   }
   
   .fourth_page_desc_heading{
@@ -515,12 +520,13 @@
   }
   
   .fourth_page_illustration{
-    width:100vw;
+    width:90vw;
     /* border: 5px solid rgb(8, 109, 33); */
     display: flex;
     align-items: center;
     justify-content: center;
     height: 500px;
+    margin: 0 auto;
   }
   
   .fourth_iot_pic{
