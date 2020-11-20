@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import SecondPage from './components/SecondPage';
+import ThirdPage from './components/ThirdPage';
+import FourthPage from './components/FourthPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className='home_page'>
+        <p className='home_page_heading'>Internet of Things</p>
+      </div>
+
+      <SecondPage />
+      <ThirdPage />
+      <FourthPage />
     </div>
   );
 }
