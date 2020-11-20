@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap');
+
+
+
+
 *{
   margin: 0px;
   padding: 0px;
@@ -41,12 +47,16 @@
 .second_page_desc_heading{
   /* border:5px solid red; */
   padding: 0px 120px;
-  margin: 0px auto;
+  margin: 20px auto;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 25px;
+  color: rgba(0,0,0,0.8);
 }
 
 .second_page_desc_text{
   /* border:5px solid red; */
   padding: 0px 120px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .second_page_illustration{
@@ -83,13 +93,17 @@
 .third_page_desc_heading{
   /* border:5px solid red; */
   padding: 10px 120px;
-  margin:0px 0px;
+  margin:20px 0px;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 25px;
+  color: rgba(0,0,0,0.8);
 }
 
 .third_page_desc_text{
   /* border:5px solid red; */
   padding: 0px 120px;
   /* list-style : none; */
+  font-family: 'Quicksand', sans-serif;
 }
 
 .third_page_illustration{
@@ -120,18 +134,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 700px;
+  height: 500px;
 }
 
 .fourth_page_desc_heading{
   /* border:5px solid red; */
   padding: 0px 120px;
-  margin: 0px auto;
+  margin: 20px auto;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 25px;
+  color: rgba(0,0,0,0.8);
 }
 
 .fourth_page_desc_text{
   /* border:5px solid red; */
   padding: 0px 120px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .fourth_page_illustration{
@@ -140,7 +158,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 700px;
+  height: 500px;
 }
 
 .fourth_iot_pic{
