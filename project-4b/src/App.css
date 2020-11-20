@@ -221,53 +221,34 @@
 @media screen and (min-width: 769px) and (max-width: 1024px){
   .home_page{
     background-image: url("./Images/background.jpg");
-    height: 600px;
+    /* height: 400px;  */
+    /* background-size: contain;  */
+
+  /* width: 100px;  */
+  /* background-size: 100%; */
+  /* background-position: -300px 0px; */
   
     display: flex;
     padding-left: 20vw;
     align-items: center;
-  
-    animation-name: homePage_animate;
-    animation-duration: 2s;
-    animation-delay: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-  @keyframes homePage_animate {
-    0%   {opacity:0.1; }
-    100% {opacity:1;}
   }
   
   
   .home_page_heading{
     transform: translate(0px, -50px);
-    /* color: aliceblue; */
-    color: rgb(250, 0, 0);
+    color: aliceblue;
+    /* color: rgb(250, 0, 0); */
     opacity: 0;
-    font-family: 'Monoton', cursive;
     letter-spacing: 1px;
-  
-    animation-name: iot_heading_animate;
-    animation-duration: 2s;
-    animation-delay: 1.6s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-  }
-  @keyframes iot_heading_animate {
-    0%   {opacity:0.1; transform: scale(0.1);}
-    100% {opacity:1; transform: scale(2);}
   }
   
   /* -------------------- Second Page -------------------- */
   .second_page{
     display: flex;
-    /* border: 5px solid black; */
   }
   
   .second_page_description{
     width:50vw;
-    /* border: 5px solid rgb(224, 4, 4); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -275,23 +256,19 @@
   }
   
   .second_page_desc_heading{
-    /* border:5px solid red; */
     padding: 0px 120px;
     margin: 20px auto;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     color: rgba(0,0,0,0.8);
   }
   
   .second_page_desc_text{
-    /* border:5px solid red; */
-    padding: 0px 120px;
-    font-family: 'Quicksand', sans-serif;
+    padding: 0px 80px;
+    font-size: 21px;
   }
   
   .second_page_illustration{
     width:50vw;
-    /* border: 5px solid rgb(8, 109, 33); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -299,7 +276,7 @@
   }
   
   .second_iot_pic{
-    width: 500px;
+    width: 450px;
   }
   
   
@@ -308,12 +285,10 @@
   /* -------------------- Third Page -------------------- */
   .third_page{
     display: flex;
-    /* border: 5px solid black; */
   }
   
   .third_page_description{
     width:50vw;
-    /* border: 5px solid rgb(224, 4, 4); */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -321,24 +296,19 @@
   }
   
   .third_page_desc_heading{
-    /* border:5px solid red; */
     padding: 10px 120px;
     margin:20px 0px;
-    font-family: 'Catamaran', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     color: rgba(0,0,0,0.8);
   }
   
   .third_page_desc_text{
-    /* border:5px solid red; */
-    padding: 0px 120px;
-    /* list-style : none; */
-    font-family: 'Quicksand', sans-serif;
+    padding: 0px 80px;
+    font-size: 21px;
   }
   
   .third_page_illustration{
     width:50vw;
-    /* border: 5px solid rgb(8, 109, 33); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -346,7 +316,7 @@
   }
   
   .third_iot_pic{
-    width: 400px;
+    width: 450px;
   }
   
   
@@ -372,13 +342,14 @@
     padding: 0px 120px;
     margin: 20px auto;
     font-family: 'Catamaran', sans-serif;
-    font-size: 25px;
+    font-size: 30px;
     color: rgba(0,0,0,0.8);
   }
   
   .fourth_page_desc_text{
     /* border:5px solid red; */
-    padding: 0px 120px;
+    padding: 0px 80px;
+    font-size: 21px;
     font-family: 'Quicksand', sans-serif;
   }
   
@@ -392,7 +363,7 @@
   }
   
   .fourth_iot_pic{
-    width: 500px;
+    width: 450px;
   }
 
 }
@@ -401,7 +372,160 @@
 
 /* -------------------- iPads and Tablets ------------------------------*/
 @media screen and (min-width: 481px) and (max-width: 768px){
+  .home_page{
+    background-image: url("./Images/background.jpg");
+    /* height: 400px;  */
+    /* background-size: contain;  */
 
+  /* width: 100px;  */
+  /* background-size: 100%; */
+  /* background-position: -300px 0px; */
+  
+    display: flex;
+    padding-left: 20vw;
+    align-items: center;
+  }
+  
+  
+  .home_page_heading{
+    transform: translate(0px, -50px);
+    color: aliceblue;
+    /* color: rgb(250, 0, 0); */
+    opacity: 0;
+    letter-spacing: 1px;
+  }
+  
+  /* -------------------- Second Page -------------------- */
+  .second_page{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid rgb(36, 34, 34);
+
+  }
+  
+  .second_page_description{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+  }
+  
+  .second_page_desc_heading{
+    padding: 0px 120px;
+    margin: 20px auto;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+  }
+  
+  .second_page_desc_text{
+    padding: 0px 80px;
+    font-size: 21px;
+  }
+  
+  .second_page_illustration{
+    margin-top: -80px;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  
+  .second_iot_pic{
+    width: 450px;
+  }
+  
+  
+  
+  
+  /* -------------------- Third Page -------------------- */
+  .third_page{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 5px solid rgb(36, 34, 34);
+  }
+  
+  .third_page_description{
+    width:100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+  }
+  
+  .third_page_desc_heading{
+    padding: 10px 120px;
+    margin:20px 0px;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+  }
+  
+  .third_page_desc_text{
+    padding: -30px 80px;
+    font-size: 21px;
+  }
+  
+  .third_page_illustration{
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  
+  .third_iot_pic{
+    width: 450px;
+  }
+  
+  
+  
+  
+  /* -------------------- Fourth Page -------------------- */
+  .fourth_page{
+    display: flex;
+    flex-direction: column;
+    /* border: 5px solid black; */
+  }
+  
+  .fourth_page_description{
+    width:100vw;
+    /* border: 5px solid rgb(224, 4, 4); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+  }
+  
+  .fourth_page_desc_heading{
+    /* border:5px solid red; */
+    padding: 0px 120px;
+    margin: 20px auto;
+    font-family: 'Catamaran', sans-serif;
+    font-size: 30px;
+    color: rgba(0,0,0,0.8);
+  }
+  
+  .fourth_page_desc_text{
+    /* border:5px solid red; */
+    padding: 0px 80px;
+    font-size: 21px;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .fourth_page_illustration{
+    width:100vw;
+    /* border: 5px solid rgb(8, 109, 33); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+  }
+  
+  .fourth_iot_pic{
+    width: 450px;
+  }
 }
 
 
