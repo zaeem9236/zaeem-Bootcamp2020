@@ -49,8 +49,8 @@ function FourthPage() {
             <div className='fourth_page'>
                 <div className='fourth_page_description'>
                     {/* <p>{window.scrollY}</p> */}
-                    <p className='fourth_page_desc_heading'>Heading</p>
-                    <p className='fourth_page_desc_text'>simply put, IoT is about connecting machines or, as we refer to them, 'things' that were previously 'dumb objects', (think everything from your toaster to a security camera), to the internet in order to transmit the data they collect, monitor them and enable them to 'talk to each other'.</p>
+                    <p className='fourth_page_desc_heading'>Economic Impact</p>
+                    <p className='fourth_page_desc_text'>According to the report, the IoT industry may eventually have an economic impact of more than $11 trillion by 2025. The report surveyed 800 IoT professionals and found that most were using IoT devices for remote monitoring (78%), preventative maintenance (55%), and asset tracking (33%).</p>
                 </div>
                 
                 <div className='fourth_page_illustration'>

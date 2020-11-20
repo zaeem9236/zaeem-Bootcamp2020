@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 
 
 
@@ -27,6 +27,8 @@
 .home_page_heading{
   transform: translate(0px, -50px);
   color: aliceblue;
+  font-family: 'Monoton', cursive;
+
 }
 
 /* -------------------- Second Page -------------------- */

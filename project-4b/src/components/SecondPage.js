@@ -48,8 +48,8 @@ function SecondPage() {
                 <div className='second_page_description'>
                     {/* <p>{window.scrollY}</p> */}
                     {/* {console.log(isInViewport(2),'viewport')} */}
-                    <p  className='second_page_desc_heading'>Heading</p>
-                    <p  className='second_page_desc_text'>simply put, IoT is about connecting machines or, as we refer to them, 'things' that were previously 'dumb objects', (think everything from your toaster to a security camera), to the internet in order to transmit the data they collect, monitor them and enable them to 'talk to each other'.</p>
+                    <p  className='second_page_desc_heading'>Internet of Things</p>
+                    <p  className='second_page_desc_text'>Simply put, IoT is about connecting machines or, as we refer to them, 'things' that were previously 'dumb objects', (think everything from your toaster to a security camera), to the internet in order to transmit the data they collect, monitor them and enable them to 'talk to each other'.</p>
                 </div>
 
                 <div className='second_page_illustration'>
