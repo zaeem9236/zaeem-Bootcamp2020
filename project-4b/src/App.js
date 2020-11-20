@@ -13,9 +13,9 @@ function App() {
         <p className='home_page_heading'>Internet of Things</p>
       </div>
 
-      <SecondPage />
-      <ThirdPage />
-      <FourthPage />
+      {/* <SecondPage /> */}
+      {/* <ThirdPage /> */}
+      {/* <FourthPage /> */}
     </div>
   );
 }
