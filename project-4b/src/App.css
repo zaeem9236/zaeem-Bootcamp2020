@@ -27,8 +27,18 @@
 .home_page_heading{
   transform: translate(0px, -50px);
   color: aliceblue;
+  opacity: 0;
   font-family: 'Monoton', cursive;
-
+  letter-spacing: 1px;
+  animation-name: iot_heading_animate;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes iot_heading_animate {
+  0%   {opacity:0.1; transform: scale(0.1);}
+  100% {opacity:1; transform: scale(2);}
 }
 
 /* -------------------- Second Page -------------------- */
