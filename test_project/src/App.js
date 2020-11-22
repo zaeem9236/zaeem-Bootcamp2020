@@ -1,11 +1,12 @@
-import React, { useReducer } from 'react';
+import React from 'react';
 import './App.css';
+
 
 
 function App() {
   return (
     <React.Fragment>
-      <h1>Complex use reducer testing</h1>
+      <h1>Current and voltage example with complex state management</h1>
     </React.Fragment>
   );
 
