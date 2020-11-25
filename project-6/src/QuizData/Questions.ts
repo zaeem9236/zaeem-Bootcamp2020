@@ -4,7 +4,7 @@ export let Questions = [
         optionA: 'apple',
         optionB: 'samsunhg',
         optionC: 'Internet of things',
-        opionD: 'dell',
+        optionD: 'dell',
         correctAns: 'Internet of things'
     },
 
@@ -13,7 +13,7 @@ export let Questions = [
         optionA: 'resistor',
         optionB: 'food',
         optionC: 'software',
-        opionD: 'IC',
+        optionD: 'IC',
         correctAns: 'IC'
     },
 ];
