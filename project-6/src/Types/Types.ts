@@ -6,3 +6,11 @@ export type QuestionType =  {
     optionD: string;
     correctAns: string;
 };
+
+export type stateType = {
+    currentQuestion: string;
+};
+
+export type actionType = {
+    type: string;
+}

@@ -1,21 +1,31 @@
-import React from 'react';
+import React, { useReducer } from 'react';
 import './App.css';
 import { Questions } from './QuizData/Questions';
 import QuesView from './Components/QuesView';
-import { QuestionType } from './Types/Types';
+import { stateType, actionType } from './Types/Types';
+import globalContext from './Context&Reducer/ContextAPI';
 
 
-let file = {
-  message: 'heloo world',
-  text: '123'
-};
+
+function reducer(state: stateType, action : actionType){
+  switch(action.type){
+    default:
+      return state;
+  }
+}
+
+let initalState = {
+  currentQuestion: '',
+}
 
 function App() {
-  // {console.log(add(2,3))};
+ let [state, dispatch] = useReducer(reducer, initalState);
   return (
     <div className="App">
-       <h1>project 6</h1>
-       <QuesView Questions ={Questions[0]} />
+      <globalContext.Provider value='f'>
+        <h1>project 6</h1>
+        <QuesView Questions={Questions[0]} />
+      </globalContext.Provider>
 
     </div>
   );
