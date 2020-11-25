@@ -1,19 +1,14 @@
 import React from 'react';
 import './App.css';
+import { Questions } from './QuizData/Questions';
 
-function show(obj: {name:string, age: number, jobless: boolean}){
-  console.log(obj.name,'yr');
-}
+
 
 function App() {
-let Data = {
-  name: 'zaeem',
-  age: 26,
-  jobless: true
-}
+{console.log(Questions)};
   return (
     <div className="App">
-       {show(Data)};
+       <h1>project 6</h1>
     </div>
   );
 }
