@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { QuestionType } from '../Types/Types';
+import globalContext from '../Context&Reducer/ContextAPI';
+import { stateType, actionType } from '../Types/Types';
+
 
 
 function QuesView(props: {Questions: QuestionType}) {
-    {console.log(props.Questions.question,'quessdon check')};
+ let [state,dispatch] = useContext(globalContext);
+// console.log(x.currentQuestion,'current Qus');
+console.log(dispatch);
 
     return (
         <div>
@@ -12,6 +17,7 @@ function QuesView(props: {Questions: QuestionType}) {
             <p>{props.Questions.optionB}</p>
             <p>{props.Questions.optionC}</p>
             <p>{props.Questions.optionD}</p>
+            {/* <button onClick={()=>{dispatch({type:'nextQuestion'})}}>Next</button> */}
         </div>
     );
 }

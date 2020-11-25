@@ -8,7 +8,7 @@ export type QuestionType =  {
 };
 
 export type stateType = {
-    currentQuestion: string;
+    currentQuestion: number;
 };
 
 export type actionType = {
