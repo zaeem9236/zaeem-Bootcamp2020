@@ -10,6 +10,8 @@ export type QuestionType =  {
 export type stateType = {
     currentQuestion: number;
     totalQuestion: number;
+    quizEnd :boolean;
+    score: number;
 };
 
 export type actionType = {

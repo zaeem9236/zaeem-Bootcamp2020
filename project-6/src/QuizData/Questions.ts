@@ -16,4 +16,13 @@ export let Questions = [
         optionD: 'IC',
         correctAns: 'IC'
     },
+
+    {
+        question: 'raspberry pi is ?',
+        optionA: 'resistor',
+        optionB: 'food',
+        optionC: 'Development board',
+        optionD: 'IC',
+        correctAns: 'Development board'
+    },
 ];

@@ -2,15 +2,22 @@ import React, { useReducer } from 'react';
 import './App.css';
 import { Questions } from './QuizData/Questions';
 import QuesView from './Components/QuesView';
+import Score from './Components/Score';
 import { stateType, actionType } from './Types/Types';
 import globalContext from './Context&Reducer/ContextAPI';
+import { stat } from 'fs';
+import { render } from '@testing-library/react';
 
 
 
-function reducer(state: stateType, action : actionType){
-  switch(action.type){
+function reducer(state: stateType, action: actionType) {
+  switch (action.type) {
     case 'nextQuestion':
-    return {...state,currentQuestion: state.currentQuestion+1,};
+      return { ...state, currentQuestion: state.currentQuestion + 1, };
+    case 'quizFinished':
+      return { ...state, quizEnd: state.quizEnd = true };
+      case 'scoreIncrement':
+      return { ...state, score: state.score + 1 };
     default:
       return state;
   }
@@ -19,22 +26,38 @@ function reducer(state: stateType, action : actionType){
 
 let initalState = {
   currentQuestion: 0,
-  totalQuestion: 2 
+  totalQuestion: 3,
+  quizEnd: false,
+  score: 0
 }
 
 function App() {
- let [state, dispatch] = useReducer(reducer, initalState);
-//  console.log(state.currentQuestion,'ye wala')
+  let [state, dispatch] = useReducer(reducer, initalState);
+  console.log(state.quizEnd, 'End check');
 
+console.log(state.score,'Finaaal score')
+  // if (state.currentQuestion === state.totalQuestion+1){
+  //   console.log('muk gyaaaaaaaaaaa');
+  // }
+  // let renderComponent = <Score />;
+  var renderComponent:JSX.Element;
+  if (state.quizEnd === false){
+     renderComponent = <QuesView Questions={Questions[state.currentQuestion]} />;
+  }else{
+    renderComponent = <Score />
+  }
   return (
     <div className="App">
       <globalContext.Provider value={{
         state,
         dispatch,
-        h:"ertugral"
+        h: "ertugral"
       }}>
         <h1>project 6</h1>
-        <QuesView Questions={Questions[state.currentQuestion]} />
+        
+          
+{renderComponent}
+        
         {/* <button onClick={()=>{dispatch({type:'nextQuestion'})}}>df</button> */}
       </globalContext.Provider>
 
