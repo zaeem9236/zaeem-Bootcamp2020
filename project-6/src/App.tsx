@@ -19,16 +19,23 @@ function reducer(state: stateType, action : actionType){
 
 let initalState = {
   currentQuestion: 0,
+  totalQuestion: 2 
 }
 
 function App() {
  let [state, dispatch] = useReducer(reducer, initalState);
- 
+//  console.log(state.currentQuestion,'ye wala')
+
   return (
     <div className="App">
-      <globalContext.Provider value={[state,dispatch]}>
+      <globalContext.Provider value={{
+        state,
+        dispatch,
+        h:"ertugral"
+      }}>
         <h1>project 6</h1>
-        <QuesView Questions={Questions[0]} />
+        <QuesView Questions={Questions[state.currentQuestion]} />
+        {/* <button onClick={()=>{dispatch({type:'nextQuestion'})}}>df</button> */}
       </globalContext.Provider>
 
     </div>

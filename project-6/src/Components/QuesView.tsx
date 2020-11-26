@@ -5,10 +5,20 @@ import { stateType, actionType } from '../Types/Types';
 
 
 
-function QuesView(props: {Questions: QuestionType}) {
- let [state,dispatch] = useContext(globalContext);
-// console.log(x.currentQuestion,'current Qus');
-console.log(dispatch);
+function QuesView(props: { Questions: QuestionType }) {
+
+    type ac = { type: string }
+
+    let reducerFunc = useContext(globalContext) as { state: stateType, dispatch: (({ }: ac) => {}), h: string };
+
+    console.log(reducerFunc.state, 'current Qus');
+
+    // console.log(x.dispatch('sd'));
+
+
+    // console.log(dispatch('nextQuestion'));
+
+
 
     return (
         <div>
@@ -17,7 +27,13 @@ console.log(dispatch);
             <p>{props.Questions.optionB}</p>
             <p>{props.Questions.optionC}</p>
             <p>{props.Questions.optionD}</p>
-            {/* <button onClick={()=>{dispatch({type:'nextQuestion'})}}>Next</button> */}
+            <button onClick={() => {
+                if (reducerFunc.state.currentQuestion < reducerFunc.state.totalQuestion -1) {
+                    reducerFunc.dispatch({
+                        type: 'nextQuestion'
+                    })
+                }
+            }}>Next</button>
         </div>
     );
 }
