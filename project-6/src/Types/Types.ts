@@ -12,6 +12,7 @@ export type stateType = {
     totalQuestion: number;
     quizEnd :boolean;
     score: number;
+    firstPage: boolean;
 };
 
 export type actionType = {

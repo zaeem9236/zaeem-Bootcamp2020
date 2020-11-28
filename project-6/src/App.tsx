@@ -1,6 +1,7 @@
 import React, { useReducer } from 'react';
 import './App.css';
 import { Questions } from './QuizData/Questions';
+import StartPage from './Components/StartPage';
 import QuesView from './Components/QuesView';
 import Score from './Components/Score';
 import { stateType, actionType } from './Types/Types';
@@ -16,8 +17,10 @@ function reducer(state: stateType, action: actionType) {
       return { ...state, currentQuestion: state.currentQuestion + 1, };
     case 'quizFinished':
       return { ...state, quizEnd: state.quizEnd = true };
-      case 'scoreIncrement':
+    case 'scoreIncrement':
       return { ...state, score: state.score + 1 };
+    case 'moveToQuiz':
+        return { ...state, firstPage: state.firstPage = false };
     default:
       return state;
   }
@@ -28,7 +31,8 @@ let initalState = {
   currentQuestion: 0,
   totalQuestion: 3,
   quizEnd: false,
-  score: 0
+  score: 0,
+  firstPage: true
 }
 
 function App() {
@@ -40,8 +44,10 @@ console.log(state.score,'Finaaal score')
   //   console.log('muk gyaaaaaaaaaaa');
   // }
   // let renderComponent = <Score />;
-  var renderComponent:JSX.Element;
-  if (state.quizEnd === false){
+  var renderComponent:JSX.Element = <StartPage />;
+  if (state.firstPage === true){
+    renderComponent === <StartPage />;
+  }else if (state.quizEnd === false){
      renderComponent = <QuesView Questions={Questions[state.currentQuestion]} />;
   }else{
     renderComponent = <Score />
