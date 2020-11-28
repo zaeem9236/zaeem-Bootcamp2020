@@ -10,9 +10,9 @@ function StartPage(){
     let reducerFunc = useContext(globalContext) as { state: stateType, dispatch: (({ }: ac) => {}), h: string };
 
     return(
-        <React.Fragment>
-            <button onClick={()=>{reducerFunc.dispatch({type: 'moveToQuiz'})}}>click here to start</button>
-        </React.Fragment>
+        <div className='start_page'>
+            <button className='start_button' onClick={()=>{reducerFunc.dispatch({type: 'moveToQuiz'})}}><p>click here to start</p></button>
+        </div>
     )
 }
 

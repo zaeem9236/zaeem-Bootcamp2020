@@ -59,7 +59,7 @@ console.log(state.score,'Finaaal score')
         dispatch,
         h: "ertugral"
       }}>
-        <h1>project 6</h1>
+        {/* <h1>project 6</h1> */}
         
           
 {renderComponent}

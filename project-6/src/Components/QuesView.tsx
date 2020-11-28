@@ -37,10 +37,10 @@ function QuesView(props: { Questions: QuestionType }) {
     return (
         <div>
             <h1>{props.Questions.question}</h1>
-            <button onClick={answercheck} className='abc'>{props.Questions.optionA}</button>
-            <button onClick={answercheck} className='abc'>{props.Questions.optionB}</button>
-            <button onClick={answercheck} className='abc'>{props.Questions.optionC}</button>
-            <button onClick={answercheck} className='abc'>{props.Questions.optionD}</button>
+            <div><button onClick={answercheck} className='option_buttons'>{props.Questions.optionA}</button></div>
+            <div><button onClick={answercheck} className='option_buttons'>{props.Questions.optionB}</button></div>
+            <div><button onClick={answercheck} className='option_buttons'>{props.Questions.optionC}</button></div>
+           <div><button onClick={answercheck} className='option_buttons'>{props.Questions.optionD}</button></div>
             <button onClick={() => {
                 if (reducerFunc.state.currentQuestion !== reducerFunc.state.totalQuestion - 1) {
                     reducerFunc.dispatch({
