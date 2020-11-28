@@ -3,6 +3,7 @@ import '../App.css';
 import { QuestionType } from '../Types/Types';
 import globalContext from '../Context&Reducer/ContextAPI';
 import { stateType, actionType } from '../Types/Types';
+import RadioButton from './RadioButton';
 import { TargetElement } from '@testing-library/user-event';
 
 

@@ -46,7 +46,7 @@ console.log(state.score,'Finaaal score')
   // let renderComponent = <Score />;
   var renderComponent:JSX.Element = <StartPage />;
   if (state.firstPage === true){
-    renderComponent === <StartPage />;
+    renderComponent = <StartPage />;
   }else if (state.quizEnd === false){
      renderComponent = <QuesView Questions={Questions[state.currentQuestion]} />;
   }else{
