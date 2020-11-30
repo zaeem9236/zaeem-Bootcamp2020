@@ -27,6 +27,18 @@
 * ##  <a href="http://zaeem_project-4a.surge.sh/">Project 4A - Red Queens's Race</a>
 <hr />
 
+<!-- * ##  <a href="http://zaeem_project-4a.surge.sh/">Project 4B - Red Queens's Race</a>
+<hr /> -->
+
+* ##  <a href="http://zaeem_project-5.surge.sh/">Project 5 - Animated React website with  illustrations</a>
+<hr />
+
+* ##  <a href="http://zaeem_project-6.surge.sh/">Project 6 - Quiz App using TypeScript</a>
+<hr />
+
+* ##  <a href="https://project-7a-expense-tracker.web.app/">Project 7A - Expense tracker(rebuild) with PWA and Push notification functionality</a>
+<hr />
+
 
 
 
