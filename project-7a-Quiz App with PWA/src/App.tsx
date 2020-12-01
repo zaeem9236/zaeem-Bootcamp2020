@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useReducer, useEffect } from 'react';
 import './App.css';
 import { Questions } from './QuizData/Questions';
 import StartPage from './Components/StartPage';
@@ -8,6 +8,8 @@ import { stateType, actionType } from './Types/Types';
 import globalContext from './Context&Reducer/ContextAPI';
 import { stat } from 'fs';
 import { render } from '@testing-library/react';
+import { initNotification } from './Services/firebaseService';
+
 
 
 
@@ -36,10 +38,16 @@ let initalState = {
 }
 
 function App() {
+
+  useEffect(() => {
+    
+    initNotification();
+  });
+
   let [state, dispatch] = useReducer(reducer, initalState);
   console.log(state.quizEnd, 'End check');
 
-console.log(state.score,'Finaaal score')
+console.log(state.score,'Finaal score')
   // if (state.currentQuestion === state.totalQuestion+1){
   //   console.log('muk gyaaaaaaaaaaa');
   // }
