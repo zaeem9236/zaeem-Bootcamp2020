@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.option_buttons{
+  background-color: white;
+}
+.option_button:focus{
+  color:#a52a2a;
+}
+
+.start_page{
+  background-color: red;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.start_button{
+  background-color: rebeccapurple;
+  border: none;
+  border: 3px solid pink;
+  padding: 20px 40px;
+}
