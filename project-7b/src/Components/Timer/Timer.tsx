@@ -2,10 +2,11 @@ import React from 'react';
 
 function Timer(){
     return(
-        <React.Fragment>
+        <div>
             <h1>I am timer component</h1>
-        </React.Fragment>
+        </div>
     );
 }
+
 
 export default Timer;
