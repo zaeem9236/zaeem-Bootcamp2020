@@ -1,12 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { ApolloProvider } from "@apollo/client";
+import client  from './config/gql_config';
+import Student from './components/Student';
 
 function App() {
   return (
-    <div className="App">
-     <h1>project-8</h1>
-    </div>
+    <ApolloProvider client={client}>
+      <div>
+        <h2>My first Apollo app 🚀</h2>
+        <Student />
+      </div>
+    </ApolloProvider>
   );
 }
 
