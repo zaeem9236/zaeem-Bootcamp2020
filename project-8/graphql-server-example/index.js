@@ -1,38 +1,39 @@
 const { ApolloServer, gql } = require('apollo-server');
 
-const students = [
+let PeopleData = [
     {
-        "Id":0,
-        "name": "Ali",
-        "email": "ali@gmail.com",
-        "age": 21,
+        "name": "Zaeem",
+        "age": 26,
+        "gender": "male",
     },
     {
-        "Id":1,
-        "name": "Zaeem",
-        "email": "Zaeem@gmail.com",
-        "age": 26,
+        "name": "bisma",
+        "age": 27,
+        "gender": "female",
     }
 ]
 
 
 const resolvers = {
     Query: {
-        students: () => students,
+        getBio: () => PeopleData,
     },
 };
 
+
+// schema (types of data + types of query)
 const typeDefs = gql`
-  type Student {
-    id: Int
+  type BioData {
     name: String
-    email: String
     age: Int
+    gender: String
   }
 
+
   type Query {
-    students: [Student]
+    getBio: [BioData]
   }
+
 `;
 
 
