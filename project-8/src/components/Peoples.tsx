@@ -1,13 +1,14 @@
 import React from 'react';
 import { useQuery, gql, useMutation } from '@apollo/client';
+import { couldStartTrivia } from 'typescript';
 
-// const Get_students = gql`
-//   query GetAllStudents {
-//     students {
-//       name
-//     }
-//   }
-// `;
+const GetPeople = gql`
+  query GetAllPeople {
+    getBio {
+      name
+    }
+  }
+`;
 
 // const ADD_Student = gql`
 // mutation AddStudent($id: Int!, $email: String!, $age: Int!, $name: String!) {
@@ -21,7 +22,15 @@ import { useQuery, gql, useMutation } from '@apollo/client';
 // `;
 
 function Peoples(){
+ const { loading, error, data} = useQuery(GetPeople);
 
+ if (loading){
+   return (<h1>Loading...</h1>)
+ }else if (error){
+   return (<h1>Error...</h1>)
+ }
+
+ console.log(data,"Data from GraphQL server");
 
     return(
         <div>
