@@ -17,6 +17,7 @@ let PeopleData = [
 const resolvers = {
     Query: {
         getBio: () => PeopleData,
+        // write Businees Logic here
     },
 };
 
