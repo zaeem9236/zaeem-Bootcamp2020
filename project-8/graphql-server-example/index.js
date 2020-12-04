@@ -19,6 +19,18 @@ const resolvers = {
         getBio: () => PeopleData,
         // write Businees Logic here
     },
+    Mutation: {
+      addPrsn: (_, {input}) => {
+        PeopleData.push(
+          {
+            name: input.name,
+            age: input.age,
+            gender: input.gender
+          }
+        )
+        return (input);
+      }
+    } 
 };
 
 
@@ -30,9 +42,18 @@ const typeDefs = gql`
     gender: String
   }
 
+  input prsnInput {
+    name: String
+    age: Int
+    gender: String
+  }
 
   type Query {
     getBio: [BioData]
+  }
+
+  type Mutation {
+    addPrsn (input: prsnInput): BioData
   }
 
 `;

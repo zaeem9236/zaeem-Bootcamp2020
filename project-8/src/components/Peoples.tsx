@@ -12,6 +12,17 @@ const GetPeople = gql`
   }
 `;
 
+const ADD_Person = gql`
+  mutation AddPerson($name: String!, $age: Int!, $gender: String!) {
+    addPrsn( 
+      input: {name: $name,  age: $age, gender: $gender}
+    ) {
+      name
+      age
+    }
+  }
+`;
+
 // const ADD_Student = gql`
 // mutation AddStudent($id: Int!, $email: String!, $age: Int!, $name: String!) {
 //   addStudent(
@@ -25,6 +36,7 @@ const GetPeople = gql`
 
 function Peoples() {
   const { loading, error, data } = useQuery(GetPeople);
+  const [addPersonAction] = useMutation(ADD_Person)
 
   if (loading) {
     return (<h1>Loading...</h1>)
@@ -49,6 +61,11 @@ function Peoples() {
               })
         }
       </table>
+
+        <button onClick={()=>{
+          addPersonAction({variables:{name:"Hassan",age:39,gender:"male"}})
+        }}>Click here to ADD person</button>
+
     </div>
   );
 
